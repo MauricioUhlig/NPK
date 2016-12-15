@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:paddingTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3.0"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+            <TextView
+                android:textSize="@dimen/tamanho_titulo"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tit_gessagem" />
+            <TextView
+                android:textSize="@dimen/txtTamanho"
+                android:textColor="@color/pretoBasico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_result_analise_solo" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical" android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:layout_weight="1.0">
+                    <EditText
+                        android:id="@+id/gessoKCx"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/botonAlt"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:gravity="center_vertical|center_horizontal" />
+                    <EditText
+                        android:id="@+id/gessoCaCx"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/botonAlt"
+                        android:ems="10"  android:inputType="numberDecimal"
+                        android:gravity="center_vertical|center_horizontal" />
+                    <EditText
+                        android:id="@+id/gessoMgCx"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/botonAlt"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:gravity="center_vertical|center_horizontal" />
+                    <EditText
+                        android:id="@+id/gessoAlCx"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/botonAlt"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:gravity="center_vertical|center_horizontal" />
+                    <EditText
+                        android:id="@+id/gessoHAlCx"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/botonAlt"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:gravity="center_vertical|center_horizontal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView
+                        android:gravity="center|start"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/botonAlt"
+                        android:text="@string/K_mg_dm_3" />
+                    <TextView
+                        android:gravity="center|start"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/botonAlt"
+                        android:text="@string/Ca_cmolc_dm_3" />
+                    <TextView
+                        android:gravity="center|start"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/botonAlt"
+                        android:text="@string/Mg_cmolc_dm_3" />
+                    <TextView
+                        android:gravity="center|start"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/botonAlt"
+                        android:text="@string/Al_cmolc_dm_3" />
+                    <TextView
+                        android:gravity="center|start"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/botonAlt"
+                        android:text="@string/H_Al_cmolc_dm_3" />
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0">
+                    <Button
+                        android:layout_gravity="center"
+                        android:textColor="@color/branco"
+                        android:background="@color/colorPrimaryDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn_calcular"
+                        android:onClick="calcularGessagem" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/txtTamanho"
+                    android:textColor="@color/pretoBasico"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_qtd_gesso" />
+                <TextView
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHighlight="@color/pretoBasico"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/lbl_gesso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0" />
+                <TextView
+                    android:textSize="@dimen/txtTamanho"
+                    android:textColor="@color/pretoBasico"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kg_ha_gesso" />
+            </LinearLayout>
+            <TextView
+                android:textSize="@dimen/txtTamanho"
+                android:textColor="@color/pretoBasico"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_obs" />
+            <TextView
+                android:textSize="@dimen/txtObs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_obs_2_L1" />
+            <TextView
+                android:textSize="@dimen/txtObs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_obs_2_L2" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

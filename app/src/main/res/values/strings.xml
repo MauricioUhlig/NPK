@@ -1,0 +1,107 @@
+<resources>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Inicio</string>
+    <string name="nav_photos">Photos</string>
+    <string name="nav_movies">Movies</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about_us">Sobre</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Inicio</item>
+        <item>Photos</item>
+        <item>Movies</item>
+        <item>Notifications</item>
+        <item>Configurações</item>
+    </string-array>
+
+    <string name="activity_title_about_us">Sobre</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="app_name">NPK</string>
+    <string name="app_subname"> Nutrição de Plantas</string>
+
+    <string name="inicio">Início</string>
+    <string name="sobre">Sobre</string>
+    <string name="contato">Contato</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="btn_analiseFoliar">Interpretação Análise Foliar</string>
+    <string name="btn_analiseSolo">Interpretação Análise Solo</string>
+    <string name="btn_calcular">Calcular</string>
+    <string name="btn_cultOrganico">Cultivo Orgânico</string>
+    <string name="btn_custoFertilizante">Custo/kg Fertilizante</string>
+    <string name="btn_fertCafConilon">Fertirrigação do Café Conilon</string>
+    <string name="btn_fertilizantes">Fertilizantes</string>
+    <string name="btn_fertirrigacao">Fertirrigação Geral</string>
+    <string name="btn_formComuns">Formulados mais comuns</string>
+    <string name="btn_gesso">Recomendação de Gesso</string>
+    <string name="btn_recomedacao_micronutrientes">Recomendação de Micronutrientes</string>
+    <string name="btn_recomendacoes_adubacao">Recomendação de adubação</string>
+    <string name="btn_transUnidades">Transformação de Unidades</string>
+
+    <string name="kg_ha_gesso">Kg/ha de gesso</string>
+    <string name="K_mg_dm_3">K (mg/dm³)</string>
+    <string name="Ca_cmolc_dm_3">Ca (cmolc/dm³)</string>
+    <string name="Mg_cmolc_dm_3">Mg (cmolc/dm³)</string>
+    <string name="Al_cmolc_dm_3">Al (cmolc/dm³)</string>
+    <string name="H_Al_cmolc_dm_3">H+Al (cmolc/dm³)</string>
+
+    <string name="tit_adubMicro">Adubação com Micronutrientes</string>
+    <string name="tit_apresenta_titulo">Sistema de Recomedação de Calagem e Adubação</string>
+    <string name="tit_gessagem">Gessagem</string>
+    <string name="tit_select">Selecione a variedade e aperte o OK</string>
+    <string name="title_activity_adub_abacate">Abacate</string>
+    <string name="title_activity_analise_foliar">Análise Foliar</string>
+    <string name="title_activity_analise_solo">Análise Solo</string>
+    <string name="title_activity_cultivo_organico">Cultivo Orgânico</string>
+    <string name="title_activity_custo_fertilizantes">Custo Fertilizantes</string>
+    <string name="title_activity_fert_lizantes">Fertlizantes</string>
+    <string name="title_activity_fertirrigacao_cafe">Fertirrigação do Café Conilon</string>
+    <string name="title_activity_fertirrigacao_geral">Fertirrigação Geral</string>
+    <string name="title_activity_forms_comuns">Formulados Comuns</string>
+    <string name="title_activity_recomendacao_adubacao">Recomendação de Adubação</string>
+    <string name="title_activity_recomendacao_gesso">Recomendação de Gesso</string>
+    <string name="title_activity_recomendacao_micronutrientes">Recomendação de Micronutrientes</string>
+    <string name="title_activity_trans_unidade">Transformação de Unidades</string>
+
+    <string name="txt_apresenta_textoP1">Este App tem por objetivo facilitar os cálculos da quantidade de nutrientes a ser aplicada às culturas, com base na análise do solo e na produtividade esperada.</string>
+    <string name="txt_apresenta_textoP2">É importante que cada técnico (usuário deste software) que detenha conhecimento referente à  nutrição de determinadas culturas, análise criticamente as quantidades e a forma de aplicação dos nutrientes e nos comunique para que as modificações sejam feitas, aumentando, assim, cada vez mais a exatidão das recomendações.</string>
+    <string name="txt_apresenta_textoP3">Para se obter a recomendação da quantidade de nutrientes, calcário e gesso, basta o usuário digitar as informações solicitadas nos campos</string>
+    <string name="txt_cultura">Cultura:</string>
+    <string name="txt_dose">Dose (Kg/ha)</string>
+    <string name="txt_micronutriente">Micronutriente</string>
+    <string name="txt_numero_Extrator">Número do Extrator*</string>
+    <string name="txt_teor_analise_solo">Teor da análise do solo (mg/dm³)</string>
+    <string name="txt_obs">Observações:</string>
+    <string name="txt_obs_1_L1">*Se <u>Mehlich</u>, digite o número <b>1</b></string>
+    <string name="txt_obs_1_L2">Se <u>DTPA</u>, digite o número <b>2</b></string>
+    <string name="txt_obs_1_L3">Se <u>Água quente</u>, digite o número <b>3</b></string>
+    <string name="txt_obs_2_L1">1) O gesso deve ser utilizado somente para a correção de acidez do solo em camadas abaixo de 20 cm de profundidade.</string>
+    <string name="txt_obs_2_L2">2) O gesso deve ser aplicado 2 meses após a calagem.</string>
+    <string name="txt_produtor">Produtor:</string>
+    <string name="txt_qtd_gesso">Quantidade de gesso =</string>
+    <string name="txt_result_analise_solo">Resultado da análise do solo da <u>camada de 20-40 cm</u></string>
+    <string name="txt_sobre">Texto de teste.</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt maximus leo nec pretium. Maecenas rutrum laoreet finibus. Ut id vestibulum leo. Nunc vel eros eget mauris pellentesque facilisis ut ac urna. Sed a diam dui. Pellentesque non varius nunc, sed rutrum augue. Donec elementum quis sem a gravida. Integer commodo eros sit amet felis ultricies molestie. Maecenas varius iaculis felis, sed lobortis elit auctor non. In hac habitasse platea dictumst. Donec nec tristique ex, ut imperdiet nisi. Fusce posuere congue turpis sit amet posuere. Phasellus odio libero, pellentesque sit amet euismod in, vehicula nec lorem. Nullam dictum placerat libero sed posuere.
+
+Vivamus ac leo at mi suscipit convallis sed at ipsum. In tristique tellus nibh, ac commodo libero gravida et. Nam vehicula diam in tempus rhoncus. Vivamus at pellentesque lorem. Aliquam imperdiet egestas viverra. Praesent accumsan sapien aliquet libero molestie pharetra. Pellentesque non dui in turpis interdum efficitur eget et dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus varius nisl et tortor luctus tristique. Duis molestie dui in nunc pharetra, id tincidunt mi fringilla. Nulla efficitur sapien varius feugiat cursus. Duis sed ante consectetur, consequat nibh at, consequat urna. In fermentum efficitur finibus. Mauris nec viverra nisl. Nulla accumsan neque non dictum faucibus. Fusce tincidunt turpis ut rutrum iaculis.
+
+Mauris quis felis quis dolor bibendum facilisis quis vel magna. Suspendisse blandit, ante eget tincidunt sodales, purus velit sollicitudin lorem, id elementum quam ligula sit amet sapien. Nunc sed porta quam. Praesent ultrices quam et tincidunt tincidunt. Vivamus pretium id ipsum id tincidunt. Mauris at nisi non velit maximus placerat. Vestibulum ac vehicula nisl, ut varius sem.
+
+Phasellus varius arcu sed nisi interdum tristique. Mauris feugiat tincidunt velit vitae euismod. Sed lobortis sollicitudin magna, sit amet gravida risus elementum at. Cras ac risus in est aliquam interdum et vitae leo. Etiam volutpat quam vel vulputate interdum. Vivamus id efficitur ex. Aliquam ac justo a velit egestas feugiat. Praesent tincidunt erat non justo facilisis tincidunt. Aliquam id velit vel magna gravida cursus ac nec nisi. Nullam efficitur eget tortor sit amet consectetur. Suspendisse tincidunt volutpat ipsum, at malesuada nisi fermentum sit amet. Proin interdum sit amet mauris sed tempor. Aenean eget luctus tortor. Quisque ultricies mattis lorem, in varius nisl pellentesque id.
+
+Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque sem. Etiam egestas, diam vitae hendrerit scelerisque, mi libero porta nisi, eu aliquet augue lacus et risus. Etiam non porttitor massa. Integer a eros lobortis, faucibus leo in, aliquam nulla. Sed vel leo auctor, hendrerit metus a, eleifend turpis. Duis fermentum sagittis egestas. Mauris porta neque elit, ut tristique purus aliquet at. In ultrices ligula at ipsum scelerisque maximus non quis turpis. Donec volutpat venenatis ipsum, eu ullamcorper sapien consequat et.</string>
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorPrimaryLight">#B2DFDB</color>
+    <color name="colorAccent">#8BC34A</color>
+    <color name="branco">#ffffff</color>
+    <color name="pretoBasico">#212121</color>
+    <color name="PrimaryText">#212121</color>
+    <color name="SecundaryText">#757575</color>
+    <color name="DividerColor">#BDBDBD</color>
+    <color name="txtButtom">#4781dd</color>
+</resources>
