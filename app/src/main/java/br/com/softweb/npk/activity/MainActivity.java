@@ -22,6 +22,7 @@
     import android.widget.Toast;
 
     import br.com.softweb.npk.R;
+    import br.com.softweb.npk.activity.submenu.RecoAduba;
     import br.com.softweb.npk.activity.submenu.RecomendacaoGesso;
     import br.com.softweb.npk.activity.submenu.RecomendacaoMicronutrientes;
     import br.com.softweb.npk.fragment.HomeFragment;
@@ -320,7 +321,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Logout user!", Toast.LENGTH_LONG).show();
             return true;
         }
-
+/*
         // user is in notifications fragment
         // and selected 'Mark all as Read'
         if (id == R.id.action_mark_all_read) {
@@ -332,7 +333,7 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_clear_notifications) {
             Toast.makeText(getApplicationContext(), "Clear all notifications!", Toast.LENGTH_LONG).show();
         }
-
+*/
         return super.onOptionsItemSelected(item);
     }
     public void microNutrientes(View v){
@@ -341,6 +342,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void recGesso(View v){
         Intent it = new Intent(this, RecomendacaoGesso.class);
+        startActivity(it);
+    }
+    public void recAduba(View v){
+        Intent it = new Intent(this, RecoAduba.class);
         startActivity(it);
     }
 

@@ -21,20 +21,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="@string/title_activity_recomendacao_micronutrientes"
             android:name=".activity.submenu.RecomendacaoMicronutrientes"
-            android:parentActivityName=".activity.MainActivity">
+            android:label="@string/title_activity_recomendacao_micronutrientes"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.MainActivity" />
-        </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        </activity>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
         <activity
-            android:theme="@style/AppTheme.NoActionBar"
-            android:label="@string/title_activity_recomendacao_gesso"
             android:name=".activity.submenu.RecomendacaoGesso"
-            android:parentActivityName=".activity.MainActivity">
+            android:label="@string/title_activity_recomendacao_gesso"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.MainActivity" />
@@ -45,6 +48,21 @@
         <activity
             android:name=".activity.PrivacyPolicyActivity"
             android:label="@string/activity_title_privacy_policy" />
+        <activity
+            android:name=".activity.submenu.RecoAduba"
+            android:label="@string/title_activity_reco_aduba"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.softweb.npk.activity.MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

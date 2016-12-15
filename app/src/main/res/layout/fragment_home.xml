@@ -32,7 +32,8 @@
                     android:text="@string/btn_recomendacoes_adubacao"
                     android:textSize="@dimen/tamanho_subtitulo"
                     android:gravity="center_vertical|center_horizontal"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:onClick="recAduba"/>
 
                 <Button
                     android:layout_weight="9"
@@ -41,7 +42,8 @@
                     android:text=">"
                     android:background="@color/colorPrimaryDark"
                     android:textSize="@dimen/tamanho_titulo"
-                    android:textColor="@color/branco" />
+                    android:textColor="@color/branco"
+                    android:onClick="recAduba"/>
 
 
             </LinearLayout>
