@@ -1,33 +1,34 @@
-package br.com.softweb.npk.activity;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.os.Handler;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
+    package br.com.softweb.npk.activity;
 
-import br.com.softweb.npk.R;
-import br.com.softweb.npk.activity.submenu.RecomendacaoGesso;
-import br.com.softweb.npk.activity.submenu.RecomendacaoMicronutrientes;
-import br.com.softweb.npk.fragment.HomeFragment;
-import br.com.softweb.npk.fragment.MoviesFragment;
-import br.com.softweb.npk.fragment.NotificationsFragment;
-import br.com.softweb.npk.fragment.PhotosFragment;
-import br.com.softweb.npk.fragment.SettingsFragment;
+    import android.content.Intent;
+    import android.os.Bundle;
+    import android.os.Handler;
+    import android.support.design.widget.FloatingActionButton;
+    import android.support.design.widget.NavigationView;
+    import android.support.design.widget.Snackbar;
+    import android.support.v4.app.Fragment;
+    import android.support.v4.app.FragmentTransaction;
+    import android.support.v4.view.GravityCompat;
+    import android.support.v4.widget.DrawerLayout;
+    import android.support.v7.app.ActionBarDrawerToggle;
+    import android.support.v7.app.AppCompatActivity;
+    import android.support.v7.widget.Toolbar;
+    import android.view.Menu;
+    import android.view.MenuItem;
+    import android.view.View;
+    import android.widget.ImageView;
+    import android.widget.TextView;
+    import android.widget.Toast;
+
+    import br.com.softweb.npk.R;
+    import br.com.softweb.npk.activity.submenu.RecomendacaoGesso;
+    import br.com.softweb.npk.activity.submenu.RecomendacaoMicronutrientes;
+    import br.com.softweb.npk.fragment.HomeFragment;
+    import br.com.softweb.npk.fragment.MoviesFragment;
+    import br.com.softweb.npk.fragment.NotificationsFragment;
+    import br.com.softweb.npk.fragment.PhotosFragment;
+    import br.com.softweb.npk.fragment.SettingsFragment;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.nav_view);
-       // fab = (FloatingActionButton) findViewById(R.id.fab);
+        // fab = (FloatingActionButton) findViewById(R.id.fab);
 
         // Navigation view header
         navHeader = navigationView.getHeaderView(0);
@@ -85,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         });*/
 
         // load nav menu header data
-    //   loadNavHeader();
+        //   loadNavHeader();
 
         // initializing navigation menu
         setUpNavigationView();
@@ -114,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
             drawer.closeDrawers();
 
             // show or hide the fab button
-          //  toggleFab();
+            //  toggleFab();
             return;
         }
 
@@ -141,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // show or hide the fab button
-     //   toggleFab();
+        //   toggleFab();
 
         //Closing drawer on item click
         drawer.closeDrawers();
@@ -344,7 +345,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // show or hide the fab
-  /*  private void toggleFab() {
+    /*  private void toggleFab() {
         if (navItemIndex == 0)
             fab.show();
         else
