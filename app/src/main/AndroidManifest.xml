@@ -52,7 +52,7 @@
             android:name=".activity.submenu.RecoAduba"
             android:label="@string/title_activity_reco_aduba"
             android:parentActivityName=".activity.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/MyMaterialTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="br.com.softweb.npk.activity.MainActivity" />
