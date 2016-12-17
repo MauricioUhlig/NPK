@@ -4,17 +4,232 @@
     android:layout_height="match_parent"
     tools:context="br.com.softweb.npk.activity.submenu.fragaduba.FragmentAZ">
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:paddingBottom="@dimen/botonAlt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
         <LinearLayout
+
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <ExpandableListView
+            <LinearLayout
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="@dimen/botonAlt"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:textSize="@dimen/botonAlt"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textAlignment="inherit"
+                    android:textColor="@color/colorAccent"/>
+
+                <LinearLayout
+                    android:paddingLeft="@dimen/txtObs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Abacate"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Abacaxi"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Abóbora_de_moita"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Abóbora_rasteira"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Acerola"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Alface_Agrião"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Algodão"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Alho"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Ameixa"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Arroz_Inundado"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Arroz_Sequeiro"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:tag="@string/app_name"
-                android:id="@+id/listviewEx"/>
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/botonAlt"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    android:textSize="@dimen/botonAlt"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"/>
+
+                <LinearLayout
+                    android:paddingLeft="@dimen/txtObs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Banana"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Batata"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Batata_Doce"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Berinjela"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Beterraba"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Brócolos"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Bucha"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/botonAlt"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:textSize="@dimen/botonAlt"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"/>
+
+                <LinearLayout
+                    android:paddingLeft="@dimen/txtObs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Cacau"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/botonAlt"
+                    android:layout_height="match_parent"
+                    android:text="E"
+                    android:textSize="@dimen/botonAlt"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"/>
+
+                <LinearLayout
+                    android:paddingLeft="@dimen/txtObs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Eucaplipto"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
 
     </ScrollView>

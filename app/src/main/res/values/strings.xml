@@ -51,6 +51,25 @@
     <string name="btn_recomendacoes_adubacao">Recomendação de adubação</string>
     <string name="btn_transUnidades">Transformação de Unidades</string>
 
+    <string name="Abacate">Abacate</string>
+    <string name="Abacaxi">Abacaxi</string>
+    <string name="Abóbora_de_moita">Abóbora de moita</string>
+    <string name="Abóbora_rasteira">Abóbora rasteira</string>
+    <string name="Acerola">Acerola</string>
+    <string name="Alface_Agrião">Alface/Agrião</string>
+    <string name="Algodão">Algodão</string>
+    <string name="Alho">Alho</string>
+    <string name="Ameixa">Ameixa</string>
+    <string name="Arroz_Inundado">Arroz Inundado</string>
+    <string name="Arroz_Sequeiro">Arroz Sequeiro</string>
+    <string name="Banana">Banana</string>
+    <string name="Batata">Batata</string>
+    <string name="Batata_Doce">Batata Doce</string>
+    <string name="Berinjela">Berinjela</string>
+    <string name="Beterraba">Beterraba</string>
+    <string name="Brócolos">Brócolos</string>
+    <string name="Bucha">Bucha</string>
+
     <string name="kg_ha_gesso">Kg/ha de gesso</string>
     <string name="K_mg_dm_3">K (mg/dm³)</string>
     <string name="Ca_cmolc_dm_3">Ca (cmolc/dm³)</string>
