@@ -63,6 +63,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.submenu.repetentes.Substrato" />
+        <activity
+            android:name=".activity.submenu.fragaduba.culturas.Abacate"
+            android:label="@string/title_activity_abacate"
+            android:parentActivityName=".activity.submenu.RecoAduba"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.softweb.npk.activity.submenu.RecoAduba" />
+        </activity>
+        <activity android:name=".activity.submenu.repetentes.Fragment_Plantio2V70"></activity>
     </application>
 
 </manifest>

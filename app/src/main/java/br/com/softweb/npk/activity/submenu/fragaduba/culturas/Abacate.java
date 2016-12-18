@@ -1,12 +1,6 @@
-package br.com.softweb.npk.activity.submenu;
+package br.com.softweb.npk.activity.submenu.fragaduba.culturas;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
+
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -19,13 +13,13 @@ import android.support.v7.widget.Toolbar;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import br.com.softweb.npk.R;
-import br.com.softweb.npk.activity.submenu.fragaduba.FragmentAZ;
-import br.com.softweb.npk.activity.submenu.fragaduba.FragmentGrupo;
-import br.com.softweb.npk.activity.submenu.fragaduba.culturas.Abacate;
 
+import br.com.softweb.npk.activity.submenu.repetentes.Substrato;
+import br.com.softweb.npk.activity.submenu.repetentes.Fragment_Plantio2V70;
+public class Abacate extends AppCompatActivity {
 
-public class RecoAduba extends AppCompatActivity {
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
@@ -33,11 +27,10 @@ public class RecoAduba extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reco_aduba);
+        setContentView(R.layout.activity_abacate);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
@@ -49,8 +42,8 @@ public class RecoAduba extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new FragmentAZ(), "A-Z");
-        adapter.addFragment(new FragmentGrupo(), "GRUPO");
+        adapter.addFrag(new Substrato(), "Substrato");
+        adapter.addFrag(new Fragment_Plantio2V70(), "Plantio");
         viewPager.setAdapter(adapter);
     }
 
@@ -72,7 +65,7 @@ public class RecoAduba extends AppCompatActivity {
             return mFragmentList.size();
         }
 
-        public void addFragment(Fragment fragment, String title) {
+        public void addFrag(Fragment fragment, String title) {
             mFragmentList.add(fragment);
             mFragmentTitleList.add(title);
         }
@@ -81,9 +74,5 @@ public class RecoAduba extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             return mFragmentTitleList.get(position);
         }
-    }
-    public void recAbacate(View v){
-        Intent it = new Intent(this, Abacate.class);
-        startActivity(it);
     }
 }

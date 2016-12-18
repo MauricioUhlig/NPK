@@ -70,6 +70,7 @@
     <string name="Brócolos">Brócolos</string>
     <string name="Bucha">Bucha</string>
 
+
     <string name="kg_ha_gesso">Kg/ha de gesso</string>
     <string name="K_mg_dm_3">K (mg/dm³)</string>
     <string name="Ca_cmolc_dm_3">Ca (cmolc/dm³)</string>
@@ -77,6 +78,7 @@
     <string name="Al_cmolc_dm_3">Al (cmolc/dm³)</string>
     <string name="H_Al_cmolc_dm_3">H+Al (cmolc/dm³)</string>
 
+    <string name="tit_substrato">Adubação do substrato para a produção de mudas</string>
     <string name="tit_adubMicro">Adubação com Micronutrientes</string>
     <string name="tit_apresenta_titulo">Sistema de Recomedação de Calagem e Adubação</string>
     <string name="tit_gessagem">Gessagem</string>
@@ -113,9 +115,21 @@
     <string name="txt_qtd_gesso">Quantidade de gesso =</string>
     <string name="txt_result_analise_solo">Resultado da análise do solo da <u>camada de 20-40 cm</u></string>
     <string name="txt_sobre">Texto de teste.</string>
+    <string name="txt_subs_l1">700 L de solo (horizonte B)</string>
+    <string name="txt_subs_l2">300 L de esterco de gado ou 100 L de esterco de galinha</string>
+    <string name="txt_subs_l3">2 kg de calcário dolomítico</string>
+    <string name="txt_subs_l4">4 kg de superfosfato simples</string>
+    <string name="txt_subs_l5">0.3 kg de cloreto de potássio</string>
+    <string name="txt_subs_l6">50 g de <u>FTE</u></string>
+    <string name="txt_subs_l7">Adubação nitrogenada em cobertura</string>
+    <string name="txt_subs_l8">Após o lançamento das primeiras folhas, irrigar com soloção de uréia a 0.5 ou sulfato de amônio a 1.
+        Logo após, lavar as folhas com água pura</string>
+
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt maximus leo nec pretium. Maecenas rutrum laoreet finibus. Ut id vestibulum leo. Nunc vel eros eget mauris pellentesque facilisis ut ac urna. Sed a diam dui. Pellentesque non varius nunc, sed rutrum augue. Donec elementum quis sem a gravida. Integer commodo eros sit amet felis ultricies molestie. Maecenas varius iaculis felis, sed lobortis elit auctor non. In hac habitasse platea dictumst. Donec nec tristique ex, ut imperdiet nisi. Fusce posuere congue turpis sit amet posuere. Phasellus odio libero, pellentesque sit amet euismod in, vehicula nec lorem. Nullam dictum placerat libero sed posuere.
 
-Vivamus ac leo at mi suscipit convallis sed at ipsum. In tristique tellus nibh, ac commodo libero gravida et. Nam vehicula diam in tempus rhoncus. Vivamus at pellentesque lorem. Aliquam imperdiet egestas viverra. Praesent accumsan sapien aliquet libero molestie pharetra. Pellentesque non dui in turpis interdum efficitur eget et dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus varius nisl et tortor luctus tristique. Duis molestie dui in nunc pharetra, id tincidunt mi fringilla. Nulla efficitur sapien varius feugiat cursus. Duis sed ante consectetur, consequat nibh at, consequat urna. In fermentum efficitur finibus. Mauris nec viverra nisl. Nulla accumsan neque non dictum faucibus. Fusce tincidunt turpis ut rutrum iaculis.
+Vivamus ac leo at mi suscipit convallis sed at ipsum. In tristique tellus nibh, ac commodo libero gravida et. Nam vehicula diam in tempus rhoncus. Vivamus at pellentesque lorem. Aliquam imperdiet egestas viverra. Praesent accumsan sapien aliquet libero molestie pharetra. Pellentesque non dui in turpis interdum efficitur eget et dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus varius nisl et tortor luctus tristique. Duis molestie dui in nunc pharetra, id tincidunt mi fringilla. Nulla efficitur sapien varius feugiat cursus. Duis sed ante consectetur, consequat nibh at, consequat urna. In fermentum efficitur finibus. Mauris nec viverra nisl.
+        Nulla accumsan neque non dictum faucibus. Fusce tincidunt turpis ut rutrum iaculis.
+
 
 Mauris quis felis quis dolor bibendum facilisis quis vel magna. Suspendisse blandit, ante eget tincidunt sodales, purus velit sollicitudin lorem, id elementum quam ligula sit amet sapien. Nunc sed porta quam. Praesent ultrices quam et tincidunt tincidunt. Vivamus pretium id ipsum id tincidunt. Mauris at nisi non velit maximus placerat. Vestibulum ac vehicula nisl, ut varius sem.
 
@@ -123,5 +137,6 @@ Phasellus varius arcu sed nisi interdum tristique. Mauris feugiat tincidunt veli
 
 Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque sem. Etiam egestas, diam vitae hendrerit scelerisque, mi libero porta nisi, eu aliquet augue lacus et risus. Etiam non porttitor massa. Integer a eros lobortis, faucibus leo in, aliquam nulla. Sed vel leo auctor, hendrerit metus a, eleifend turpis. Duis fermentum sagittis egestas. Mauris porta neque elit, ut tristique purus aliquet at. In ultrices ligula at ipsum scelerisque maximus non quis turpis. Donec volutpat venenatis ipsum, eu ullamcorper sapien consequat et.</string>
     <string name="title_activity_reco_aduba">Adubação</string>
+    <string name="title_activity_abacate">Abacate</string>
 
 </resources>
