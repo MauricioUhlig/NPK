@@ -4,14 +4,15 @@
     android:layout_height="match_parent"
     tools:context="br.com.softweb.npk.activity.submenu.fragaduba.FragmentAZ">
     <ScrollView
-        android:paddingBottom="@dimen/botonAlt"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
-
+            android:paddingBottom="72dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <LinearLayout
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
@@ -104,6 +105,7 @@
                 </LinearLayout>
 
             </LinearLayout>
+
             <LinearLayout
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
@@ -188,12 +190,120 @@
                 <LinearLayout
                     android:paddingLeft="@dimen/txtObs"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Cacau"
+                        android:text="@string/Cacau"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/Café_Arábica"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/Café_Conilon"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/Cana"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/Caqui"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/Cebola"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/Cebolinha"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/Cedro_Australiano"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/Cenoura"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/Chuchu"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/Cítrus"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/Coco"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/Couve_flor"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/Couve_manteiga"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="E"
+                    android:textSize="@dimen/botonAlt"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"/>
+
+                <LinearLayout
+                    android:paddingLeft="@dimen/txtObs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/Eucalípto"
                         android:textSize="@dimen/tamanho_subtitulo"
                         android:paddingTop="@dimen/nav_header_vertical_spacing"/>
 
@@ -209,7 +319,7 @@
                 <TextView
                     android:layout_width="@dimen/botonAlt"
                     android:layout_height="match_parent"
-                    android:text="E"
+                    android:text="F"
                     android:textSize="@dimen/botonAlt"
                     android:gravity="center_horizontal"
                     android:textAlignment="center"
@@ -223,7 +333,187 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Eucaplipto"
+                        android:text="@string/Feijão"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Feijão_vagem"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Figo"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/botonAlt"
+                    android:layout_height="match_parent"
+                    android:text="G"
+                    android:textSize="@dimen/botonAlt"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"/>
+
+                <LinearLayout
+                    android:paddingLeft="@dimen/txtObs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Gengibre"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Goiaba"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Graviola"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/botonAlt"
+                    android:layout_height="wrap_content"
+                    android:text="I"
+                    android:textSize="@dimen/botonAlt"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"/>
+
+                <LinearLayout
+                    android:paddingLeft="@dimen/txtObs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Inhame"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/botonAlt"
+                    android:layout_height="wrap_content"
+                    android:text="J"
+                    android:textSize="@dimen/botonAlt"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"/>
+
+                <LinearLayout
+                    android:paddingLeft="@dimen/txtObs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Jiló"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/botonAlt"
+                    android:layout_height="wrap_content"
+                    android:text="L"
+                    android:textSize="@dimen/botonAlt"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"/>
+
+                <LinearLayout
+                    android:paddingLeft="@dimen/txtObs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Lichia"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="@dimen/botonAlt"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:textSize="@dimen/botonAlt"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"/>
+
+                <LinearLayout
+                    android:paddingLeft="@dimen/txtObs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Macadâmia"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Mamão"
                         android:textSize="@dimen/tamanho_subtitulo"
                         android:paddingTop="@dimen/nav_header_vertical_spacing"/>
 
