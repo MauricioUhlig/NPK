@@ -4,27 +4,55 @@
     android:id="@+id/activity_about_us"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.com.softweb.npk.activity.AboutUsActivity">
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
         <LinearLayout
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
             <TextView
+                android:textColor="@color/PrimaryText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/txt_sobre"
+                android:text="@string/tit_sobre"
                 android:textSize="@dimen/tamanho_titulo"/>
             <TextView
+                android:paddingTop="@dimen/txtObs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/lorem_ipsum"/>
+                android:text="@string/txt_sobre_l1"/>
+            <TextView
+                android:paddingTop="@dimen/txtObs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_sobre_l2"/>
+            <TextView
+                android:paddingTop="@dimen/txtObs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_sobre_l3"/>
+            <TextView
+                android:paddingTop="@dimen/tamanho_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tit_sobre"
+                android:textColor="@color/PrimaryText"/>
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_sobre_l4"/>-->
+            <TextView
+                android:textColor="@color/txtButtom"
+                android:textIsSelectable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:text="@string/txt_email"/>
         </LinearLayout>
     </ScrollView>
 

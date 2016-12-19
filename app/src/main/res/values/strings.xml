@@ -104,6 +104,7 @@
     <string name="Al_cmolc_dm_3">Al (cmolc/dm³)</string>
     <string name="H_Al_cmolc_dm_3">H+Al (cmolc/dm³)</string>
 
+    <string name="tit_sobre">Softweb - Apps Development</string>
     <string name="tit_substrato">Adubação do substrato para a produção de mudas</string>
     <string name="tit_adubMicro">Adubação com Micronutrientes</string>
     <string name="tit_apresenta_titulo">Sistema de Recomedação de Calagem e Adubação</string>
@@ -120,7 +121,7 @@
     <string name="title_activity_forms_comuns">Formulados Comuns</string>
     <string name="title_activity_recomendacao_adubacao">Recomendação de Adubação</string>
     <string name="title_activity_recomendacao_gesso">Recomendação de Gesso</string>
-    <string name="title_activity_recomendacao_micronutrientes">Recomendação de Micronutrientes</string>
+    <string name="title_activity_recomendacao_micronutrientes">Micronutrientes</string>
     <string name="title_activity_trans_unidade">Transformação de Unidades</string>
 
     <string name="txt_apresenta_textoP1">Este App tem por objetivo facilitar os cálculos da quantidade de nutrientes a ser aplicada às culturas, com base na análise do solo e na produtividade esperada.</string>
@@ -140,8 +141,7 @@
     <string name="txt_produtor">Produtor:</string>
     <string name="txt_qtd_gesso">Quantidade de gesso =</string>
     <string name="txt_result_analise_solo">Resultado da análise do solo da <u>camada de 20-40 cm</u></string>
-    <string name="txt_sobre">Texto de teste.</string>
-    <string name="txt_subs_l1">700 L de solo (horizonte B)</string>
+        <string name="txt_subs_l1">700 L de solo (horizonte B)</string>
     <string name="txt_subs_l2">300 L de esterco de gado ou 100 L de esterco de galinha</string>
     <string name="txt_subs_l3">2 kg de calcário dolomítico</string>
     <string name="txt_subs_l4">4 kg de superfosfato simples</string>
@@ -150,7 +150,13 @@
     <string name="txt_subs_l7">Adubação nitrogenada em cobertura</string>
     <string name="txt_subs_l8">Após o lançamento das primeiras folhas, irrigar com soloção de uréia a 0.5 ou sulfato de amônio a 1.
         Logo após, lavar as folhas com água pura</string>
-
+    <string name="txt_sobre_l1">Softweb é um grupo de profissionais que juntaram seus conhecimentos tecnológicos e de desenvolvimentos, que para essa aplicação
+    se juntaram com profissionais do ramo agrícola, como egenheiros agrônomos e técnicos, para desenvolver uma aplicação
+    de fácil uso e de grande utilidade, para ajudar aos diversos grupos de usuários em relação ao uso de fertilizantes em suas produções, sejam domésticas ou grandes fazendas.</string>
+    <string name="txt_sobre_l2">Esta aplicação ainda está em fase de desenvolvimento, novas atualizações e novidades podem surgir a qualquer momento.</string>
+    <string name="txt_sobre_l3">Por favor, deixe seu feedback para nos ajudar na produçao de um app capaz de atender suas necessidades e ser capaz de ter um ótimo custo/benefício. Obrigado</string>
+    <string name="txt_sobre_l4">CNPj: 17.288.794/0001-33</string>
+    <string name="txt_email"><u>apps.softweb@gmail.com</u></string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt maximus leo nec pretium. Maecenas rutrum laoreet finibus. Ut id vestibulum leo. Nunc vel eros eget mauris pellentesque facilisis ut ac urna. Sed a diam dui. Pellentesque non varius nunc, sed rutrum augue. Donec elementum quis sem a gravida. Integer commodo eros sit amet felis ultricies molestie. Maecenas varius iaculis felis, sed lobortis elit auctor non. In hac habitasse platea dictumst. Donec nec tristique ex, ut imperdiet nisi. Fusce posuere congue turpis sit amet posuere. Phasellus odio libero, pellentesque sit amet euismod in, vehicula nec lorem. Nullam dictum placerat libero sed posuere.
 
 Vivamus ac leo at mi suscipit convallis sed at ipsum. In tristique tellus nibh, ac commodo libero gravida et. Nam vehicula diam in tempus rhoncus. Vivamus at pellentesque lorem. Aliquam imperdiet egestas viverra. Praesent accumsan sapien aliquet libero molestie pharetra. Pellentesque non dui in turpis interdum efficitur eget et dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus varius nisl et tortor luctus tristique. Duis molestie dui in nunc pharetra, id tincidunt mi fringilla. Nulla efficitur sapien varius feugiat cursus. Duis sed ante consectetur, consequat nibh at, consequat urna. In fermentum efficitur finibus. Mauris nec viverra nisl.

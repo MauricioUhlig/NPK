@@ -25,6 +25,7 @@
     import br.com.softweb.npk.activity.submenu.RecoAduba;
     import br.com.softweb.npk.activity.submenu.RecomendacaoGesso;
     import br.com.softweb.npk.activity.submenu.RecomendacaoMicronutrientes;
+    import br.com.softweb.npk.fragment.ContatosFragment;
     import br.com.softweb.npk.fragment.HomeFragment;
     import br.com.softweb.npk.fragment.MoviesFragment;
     import br.com.softweb.npk.fragment.NotificationsFragment;
@@ -153,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private Fragment getHomeFragment() {
-        switch (navItemIndex) {
+        /*switch (navItemIndex) {
             case 0:
                 // home
                 HomeFragment homeFragment = new HomeFragment();
@@ -171,13 +172,14 @@ public class MainActivity extends AppCompatActivity {
                 NotificationsFragment notificationsFragment = new NotificationsFragment();
                 return notificationsFragment;*/
 
-            case 1://4
+           /* case 1://4
                 // settings fragment
-                SettingsFragment settingsFragment = new SettingsFragment();
-                return settingsFragment;
+                ContatosFragment contatosFragment = new ContatosFragment();
+                return contatosFragment;
             default:
                 return new HomeFragment();
-        }
+        }*/
+        return new HomeFragment();
     }
 
     private void setToolbarTitle() {
@@ -203,11 +205,11 @@ public class MainActivity extends AppCompatActivity {
                         navItemIndex = 0;
                         CURRENT_TAG = TAG_HOME;
                         break;
-                    case R.id.nav_settings: //nav_photos
+                  /*  case R.id.nav_settings: //nav_photos
                         navItemIndex = 1;
                         CURRENT_TAG = TAG_PHOTOS;
                         break;
-                   /* case R.id.nav_movies:
+                   /case R.id.nav_movies:
                         navItemIndex = 2;
                         CURRENT_TAG = TAG_MOVIES;
                         break;
@@ -224,11 +226,11 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(MainActivity.this, AboutUsActivity.class));
                         drawer.closeDrawers();
                         return true;
-                    case R.id.nav_privacy_policy:
+                   /* case R.id.nav_privacy_policy:
                         // launch new intent instead of loading fragment
                         startActivity(new Intent(MainActivity.this, PrivacyPolicyActivity.class));
                         drawer.closeDrawers();
-                        return true;
+                        return true;*/
                     default:
                         navItemIndex = 0;
                 }
@@ -302,10 +304,10 @@ public class MainActivity extends AppCompatActivity {
             getMenuInflater().inflate(R.menu.main, menu);
         }
 
-        // when fragment is notifications, load the menu created for notifications
+     /*   // when fragment is notifications, load the menu created for notifications
         if (navItemIndex == 3) {
             getMenuInflater().inflate(R.menu.notifications, menu);
-        }
+        }*/
         return true;
     }
 
@@ -315,13 +317,13 @@ public class MainActivity extends AppCompatActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
+/*
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_logout) {
             Toast.makeText(getApplicationContext(), "Logout user!", Toast.LENGTH_LONG).show();
             return true;
         }
-/*
+
         // user is in notifications fragment
         // and selected 'Mark all as Read'
         if (id == R.id.action_mark_all_read) {
