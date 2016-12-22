@@ -120,7 +120,7 @@
     <string name="title_activity_fertirrigacao_geral">Fertirrigação Geral</string>
     <string name="title_activity_forms_comuns">Formulados Comuns</string>
     <string name="title_activity_recomendacao_adubacao">Recomendação de Adubação</string>
-    <string name="title_activity_recomendacao_gesso">Recomendação de Gesso</string>
+    <string name="title_activity_recomendacao_gesso">Gesso</string>
     <string name="title_activity_recomendacao_micronutrientes">Micronutrientes</string>
     <string name="title_activity_trans_unidade">Transformação de Unidades</string>
 
@@ -150,9 +150,7 @@
     <string name="txt_subs_l7">Adubação nitrogenada em cobertura</string>
     <string name="txt_subs_l8">Após o lançamento das primeiras folhas, irrigar com soloção de uréia a 0.5 ou sulfato de amônio a 1.
         Logo após, lavar as folhas com água pura</string>
-    <string name="txt_sobre_l1">Softweb é um grupo de profissionais que juntaram seus conhecimentos tecnológicos e de desenvolvimentos, que para essa aplicação
-    se juntaram com profissionais do ramo agrícola, como egenheiros agrônomos e técnicos, para desenvolver uma aplicação
-    de fácil uso e de grande utilidade, para ajudar aos diversos grupos de usuários em relação ao uso de fertilizantes em suas produções, sejam domésticas ou grandes fazendas.</string>
+    <string name="txt_sobre_l1">Softweb é um grupo de profissionais que reuniram seus conhecimentos tecnológicos e de desenvolvimento, e que, para elaborar tal aplicação, se juntaram aos profissionais do ramo agrícola, como engenheiros agrônomos e técnicos, com a intenção de atender a demandas de agricultores, diagnosticadas em análises, no que diz respeito à utilização de fertilizantes em suas produções, sejam estas tanto de agricultura familiar quanto fazendas de grande porte. </string>
     <string name="txt_sobre_l2">Esta aplicação ainda está em fase de desenvolvimento, novas atualizações e novidades podem surgir a qualquer momento.</string>
     <string name="txt_sobre_l3">Por favor, deixe seu feedback para nos ajudar na produçao de um app capaz de atender suas necessidades e ser capaz de ter um ótimo custo/benefício. Obrigado</string>
     <string name="txt_sobre_l4">CNPj: 17.288.794/0001-33</string>
