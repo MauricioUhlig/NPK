@@ -20,7 +20,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/adubacao_plantio_formacao"
-                android:textSize="@dimen/tamanho_subtitulo"/>
+                android:textSize="@dimen/tamanho_subtitulo" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/dimensoes_de_cova"/>
+                    android:text="@string/dimensoes_de_cova" />
 
                 <EditText
                     android:layout_width="wrap_content"
@@ -60,7 +60,7 @@
                 android:paddingTop="@dimen/activity_vertical_margin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/analise_solo"/>
+                android:text="@string/analise_solo" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -390,7 +390,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:text="@string/txt_obs"/>
+                android:text="@string/txt_obs"
+                android:textColor="@color/PrimaryText"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

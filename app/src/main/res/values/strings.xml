@@ -170,9 +170,9 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="title_activity_abacate">Abacate</string>
 
     <!-- tela de plantio 2 V70 -->
-    <string name="adubacao_plantio_formacao">Adubação de Plantio e Formação</string>
-    <string name="dimensoes_de_cova">Dimensões de cova (cm): </string>
-    <string name="analise_solo">Análise do solo: </string>
+    <string name="adubacao_plantio_formacao"><b>Adubação de Plantio e Formação</b></string>
+    <string name="dimensoes_de_cova"><b>Dimensões de cova (cm): </b></string>
+    <string name="analise_solo"><b>Análise do solo: </b></string>
     <string name="p_mehlich">P (Mehlich-1)</string>
     <string name="k_mehlich">K (Mehlich-1)</string>
     <string name="materia_org">Matéria Org.</string>
