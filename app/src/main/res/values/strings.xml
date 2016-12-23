@@ -169,4 +169,31 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="title_activity_reco_aduba">Adubação</string>
     <string name="title_activity_abacate">Abacate</string>
 
+    <!-- tela de plantio 2 V70 -->
+    <string name="adubacao_plantio_formacao">Adubação de Plantio e Formação</string>
+    <string name="dimensoes_de_cova">Dimensões de cova (cm): </string>
+    <string name="analise_solo">Análise do solo: </string>
+    <string name="p_mehlich">P (Mehlich-1)</string>
+    <string name="k_mehlich">K (Mehlich-1)</string>
+    <string name="materia_org">Matéria Org.</string>
+    <string name="sat_bases">Sat. Bases (V)</string>
+    <string name="ctc_solo">CTC do solo (T)</string>
+    <string name="prnt_calcario">PRNT do calcário</string>
+    <string name="mg_dm3">mg/dm³</string>
+    <string name="percent">%</string>
+    <string name="cmolc_dm3">cmolc/dm³</string>
+    <string name="aplicacao_cova"><b>Aplicação na cova: </b></string>
+    <string name="l_esterco"> L de esterco de curral</string>
+    <string name="g_superfosfato"> g de superfosfato simples</string>
+    <string name="g_calcario"> g de calcário</string>
+    <string name="g_fte"> g de FTE</string>
+    <string name="calagem"><b>Calagem: </b></string>
+    <string name="tha_calcario"> t/ha de calcário ¹</string>
+    <string name="aduba_pos_plantio"><b>Adubação de cobertura após plantio</b></string>
+    <string name="trinta_dias">1) 30 dias do plantio: </string>
+    <string name="sessenta_dias">2) 60 dias do plantio: </string>
+    <string name="noventa_dias">3) 90 dias do plantio: </string>
+    <string name="g_cova"> g/cova de </string>
+    <string name="obs_plantio2v70"> Caso não seja possível a incorporação do calcário, dividir em doses de, no máximo <b>3 t/ha</b>, por vez, espaçadas de um período de, no mínimo, 10 meses.</string>
 </resources>
+
