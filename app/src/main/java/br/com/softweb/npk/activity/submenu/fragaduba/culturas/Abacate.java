@@ -22,6 +22,7 @@ import br.com.softweb.npk.activity.submenu.repetentes.Substrato;
 import br.com.softweb.npk.activity.submenu.repetentes.Fragment_Plantio2V70;
 import br.com.softweb.npk.calculo.plantio2v70;
 
+
 public class Abacate extends AppCompatActivity {
     private float x, y, z, p_meh, k_meh, mat_org, sat_bases, ctc, prnt;
     private Toolbar toolbar;
@@ -82,56 +83,65 @@ public class Abacate extends AppCompatActivity {
 
     public void calcularPlantio(View v){
         //dimensoes
-        TextView x = (TextView)findViewById(R.id.dim1);
-        TextView y = (TextView)findViewById(R.id.dim2);
-        TextView z = (TextView)findViewById(R.id.dim3);
+        TextView X = (TextView)findViewById(R.id.dim1);
+        TextView Y = (TextView)findViewById(R.id.dim2);
+        TextView Z = (TextView)findViewById(R.id.dim3);
         //analise de solo
-        TextView p_meh = (TextView)findViewById(R.id.p_meh);
-        TextView k_meh = (TextView)findViewById(R.id.k_meh);
-        TextView mat_org = (TextView)findViewById(R.id.mat_org);
-        TextView sat_bases = (TextView)findViewById(R.id.sat_bases);
-        TextView ctc = (TextView)findViewById(R.id.ctc);
-        TextView prnt = (TextView)findViewById(R.id.prnt);
+        TextView P_meh = (TextView)findViewById(R.id.p_meh);
+        TextView K_meh = (TextView)findViewById(R.id.k_meh);
+        TextView Mat_org = (TextView)findViewById(R.id.mat_org);
+        TextView Sat_bases = (TextView)findViewById(R.id.sat_bases);
+        TextView Ctc = (TextView)findViewById(R.id.ctc);
+        TextView Prnt = (TextView)findViewById(R.id.prnt);
+
+        //verificacao de vazio
+        if (X.getText().toString().isEmpty()|| Y.getText().toString().isEmpty()|| Z.getText().toString().isEmpty()||
+                P_meh.getText().toString().isEmpty()|| K_meh.getText().toString().isEmpty()|| Mat_org.getText().toString().isEmpty()||
+                Sat_bases.getText().toString().isEmpty()|| Ctc.getText().toString().isEmpty()|| Prnt.getText().toString().isEmpty()){
+
+        }
+        else {
+
+            //aplicação na cova
+            TextView esterco = (TextView) findViewById(R.id.esterco);
+            TextView superfosfato = (TextView) findViewById(R.id.superfosfato);
+            TextView calcario = (TextView) findViewById(R.id.calcario);
+            TextView fte = (TextView) findViewById(R.id.fte);
+            TextView calagem = (TextView) findViewById(R.id.calagem);
+            //adubação após plantio
+            TextView trintadias = (TextView) findViewById(R.id.trintadias);
+            TextView sessentadias = (TextView) findViewById(R.id.sessentadias);
+            TextView noventadias = (TextView) findViewById(R.id.noventadias);
+            TextView adubo = (TextView) findViewById(R.id.adubo);
+            TextView adubo1 = (TextView) findViewById(R.id.adubo1);
+            TextView adubo2 = (TextView) findViewById(R.id.adubo2);
 
 
-        //aplicação na cova
-        TextView esterco = (TextView)findViewById(R.id.esterco);
-        TextView superfosfato = (TextView)findViewById(R.id.superfosfato);
-        TextView calcario = (TextView)findViewById(R.id.calcario);
-        TextView fte = (TextView)findViewById(R.id.fte);
-        TextView calagem = (TextView)findViewById(R.id.calagem);
-        //adubação após plantio
-        TextView trintadias = (TextView)findViewById(R.id.trintadias);
-        TextView sessentadias = (TextView)findViewById(R.id.sessentadias);
-        TextView noventadias = (TextView)findViewById(R.id.noventadias);
-        TextView adubo = (TextView)findViewById(R.id.adubo);
-        TextView adubo1 = (TextView)findViewById(R.id.adubo1);
-        TextView adubo2 = (TextView)findViewById(R.id.adubo2);
+            //convertendo string to float
+            this.x = Float.parseFloat(X.getText().toString());
+            this.y = Float.parseFloat(Y.getText().toString());
+            this.z = Float.parseFloat(Z.getText().toString());
+            this.p_meh = Float.parseFloat(P_meh.getText().toString());
+            this.k_meh = Float.parseFloat(K_meh.getText().toString());
+            this.mat_org = Float.parseFloat(Mat_org.getText().toString());
+            this.sat_bases = Float.parseFloat(Sat_bases.getText().toString());
+            this.ctc = Float.parseFloat(Ctc.getText().toString());
+            this.prnt = Float.parseFloat(Prnt.getText().toString());
 
+            //calculando
+            plantio2v70 calculo = new plantio2v70(this.x, this.y, this.z, this.p_meh, this.k_meh, this.mat_org, this.sat_bases, this.ctc, this.prnt);
+            esterco.setText(String.valueOf(calculo.esterco()));
+            superfosfato.setText(String.valueOf(calculo.SSg()));
+            calcario.setText(String.valueOf(calculo.calcarioGcova()));
+            fte.setText("20");
+            calagem.setText(String.valueOf(calculo.calagem()));
+            trintadias.setText("40");
+            sessentadias.setText("50");
+            noventadias.setText("60");
+            adubo.setText(calculo.adubo());
+            adubo1.setText(calculo.adubo());
+            adubo2.setText(calculo.adubo());
 
-        //convertendo string to float
-        this.x = Float.parseFloat(x.getText().toString());
-        this.y = Float.parseFloat(y.getText().toString());
-        this.z = Float.parseFloat(z.getText().toString());
-        this.p_meh = Float.parseFloat(p_meh.getText().toString());
-        this.k_meh = Float.parseFloat(k_meh.getText().toString());
-        this.mat_org = Float.parseFloat(mat_org.getText().toString());
-        this.sat_bases = Float.parseFloat(sat_bases.getText().toString());
-        this.ctc = Float.parseFloat(ctc.getText().toString());
-        this.prnt = Float.parseFloat(prnt.getText().toString());
-
-        //calculando
-        plantio2v70 calculo = new plantio2v70(this.x, this.y , this.z, this.p_meh, this.k_meh, this.mat_org, this.sat_bases, this.ctc, this.prnt);
-        esterco.setText(String.valueOf(calculo.esterco()));
-        superfosfato.setText(String.valueOf(calculo.SSg()));
-        calcario.setText(String.valueOf(calculo.calcarioGcova()));
-        fte.setText("20");
-        calagem.setText(String.valueOf(calculo.calagem()));
-        trintadias.setText("40");
-        sessentadias.setText("50");
-        noventadias.setText("60");
-        adubo.setText(calculo.adubo());
-        adubo1.setText(calculo.adubo());
-        adubo2.setText(calculo.adubo());
+        }
     }
 }
