@@ -29,4 +29,26 @@ public class plantio2v70 {
         else if (mat>=3 && mat<5)return 7;
         else return 5;
     }
+
+    public float SSg(){
+        double ssg =(((((80-p)/0.2)*volumeCova())/1000)*2.3*5);
+        if(ssg>0) {
+            return (float) ssg;
+        }
+        return 0;
+    }
+
+    public float calcarioTha(){
+        return (((80-sat)*ctc)/prnt);
+    }
+
+    public float calcarioGcova(){
+        float x = ((calcarioTha()/2)*volumeCova());
+        if(x>0) return x;
+        return 0;
+    }
+
+    public float calagem(){
+        return (((70-sat)*ctc)/prnt);
+    }
 }
