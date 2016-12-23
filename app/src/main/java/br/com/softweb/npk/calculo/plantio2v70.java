@@ -18,6 +18,17 @@ public class plantio2v70 {
         this.ctc = ctc;
         this.prnt = prnt;
     }
+    /*public void setAll(float x, float y, float z, float p, float k,float mat, float sat, float ctc, float prnt){
+        this.x = x;
+        this.y = y;
+        this.z = z;
+        this.p = p;
+        this.k = k;
+        this.mat = mat;
+        this.sat = sat;
+        this.ctc = ctc;
+        this.prnt = prnt;
+    }*/
 
     public float volumeCova(){
         return ((x*y*z)/1000);
@@ -52,5 +63,11 @@ public class plantio2v70 {
         float x = (((70-sat)*ctc)/prnt);
         if(x>0)return x;
         return 0;
+    }
+    public String adubo(){
+        if (k<60)return "20-00-20";
+        else if (k>=60 && k<120) return "20-00-15";
+        else if (k>=120 && k<220) return "20-00-10";
+        else return "Sulfato de Amônio";
     }
 }
