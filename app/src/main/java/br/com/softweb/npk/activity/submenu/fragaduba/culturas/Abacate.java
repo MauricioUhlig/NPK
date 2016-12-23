@@ -10,6 +10,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +21,7 @@ import br.com.softweb.npk.R;
 import br.com.softweb.npk.activity.submenu.repetentes.Substrato;
 import br.com.softweb.npk.activity.submenu.repetentes.Fragment_Plantio2V70;
 public class Abacate extends AppCompatActivity {
-
+    private float x, y, z, p_meh, k_meh, mat_org, sat_bases, ctc, prnt;
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
@@ -74,5 +76,11 @@ public class Abacate extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             return mFragmentTitleList.get(position);
         }
+    }
+
+    public void calcularPlantio(View v){
+        TextView x = (TextView)findViewById(R.id.dim1);
+        TextView y = (TextView)findViewById(R.id.dim2);
+        TextView z = (TextView)findViewById(R.id.dim3);
     }
 }

@@ -49,6 +49,8 @@ public class plantio2v70 {
     }
 
     public float calagem(){
-        return (((70-sat)*ctc)/prnt);
+        float x = (((70-sat)*ctc)/prnt);
+        if(x>0)return x;
+        return 0;
     }
 }

@@ -6,11 +6,14 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import br.com.softweb.npk.R;
 
 
 public class Fragment_Plantio2V70 extends Fragment{
+
+
 
     public Fragment_Plantio2V70() {
         // Required empty public constructor
