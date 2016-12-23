@@ -105,6 +105,9 @@ public class Abacate extends AppCompatActivity {
         TextView sessentadias = (TextView)findViewById(R.id.sessentadias);
         TextView noventadias = (TextView)findViewById(R.id.noventadias);
         TextView adubo = (TextView)findViewById(R.id.adubo);
+        TextView adubo1 = (TextView)findViewById(R.id.adubo1);
+        TextView adubo2 = (TextView)findViewById(R.id.adubo2);
+
 
         //convertendo string to float
         this.x = Float.parseFloat(x.getText().toString());
@@ -128,6 +131,7 @@ public class Abacate extends AppCompatActivity {
         sessentadias.setText("50");
         noventadias.setText("60");
         adubo.setText(calculo.adubo());
-
+        adubo1.setText(calculo.adubo());
+        adubo2.setText(calculo.adubo());
     }
 }
