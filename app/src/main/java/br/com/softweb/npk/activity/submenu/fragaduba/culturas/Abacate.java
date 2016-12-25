@@ -12,12 +12,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import br.com.softweb.npk.R;
 
+import br.com.softweb.npk.activity.submenu.fragaduba.culturas.abacate.FragmentDoisaTresAnos;
+import br.com.softweb.npk.activity.submenu.fragaduba.culturas.abacate.FragmentProducao;
+import br.com.softweb.npk.activity.submenu.fragaduba.culturas.abacate.FragmentUmaDoisAnos;
 import br.com.softweb.npk.activity.submenu.repetentes.Substrato;
 import br.com.softweb.npk.activity.submenu.repetentes.Fragment_Plantio2V70;
 import br.com.softweb.npk.calculo.plantio2v70;
@@ -47,8 +51,11 @@ public class Abacate extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFrag(new Substrato(), "Substrato");
-        adapter.addFrag(new Fragment_Plantio2V70(), "Plantio");
+        adapter.addFrag(new Substrato(), getText(R.string.substrato).toString());
+        adapter.addFrag(new Fragment_Plantio2V70(), getText(R.string.plantio).toString());
+        adapter.addFrag(new FragmentUmaDoisAnos(),getText(R.string.umadois_anos).toString());
+        adapter.addFrag(new FragmentDoisaTresAnos(),getText(R.string.doisatres_anos).toString());
+        adapter.addFrag(new FragmentProducao(),getText(R.string.producao).toString());
         viewPager.setAdapter(adapter);
     }
 
@@ -98,7 +105,8 @@ public class Abacate extends AppCompatActivity {
         if (X.getText().toString().isEmpty()|| Y.getText().toString().isEmpty()|| Z.getText().toString().isEmpty()||
                 P_meh.getText().toString().isEmpty()|| K_meh.getText().toString().isEmpty()|| Mat_org.getText().toString().isEmpty()||
                 Sat_bases.getText().toString().isEmpty()|| Ctc.getText().toString().isEmpty()|| Prnt.getText().toString().isEmpty()){
-
+            Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_LONG).show();
+            return;
         }
         else {
 

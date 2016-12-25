@@ -51,6 +51,7 @@
     <string name="btn_recomendacoes_adubacao">Recomendação de adubação</string>
     <string name="btn_transUnidades">Transformação de Unidades</string>
 
+    <!--culturas-->
     <string name="Abacate">Abacate</string>
     <string name="Abacaxi">Abacaxi</string>
     <string name="Abóbora_de_moita">Abóbora de moita</string>
@@ -95,6 +96,29 @@
     <string name="Lichia">Lichia</string>
     <string name="Macadâmia">Macadâmia</string>
     <string name="Mamão">Mamão</string>
+    <string name="Mandioca">Mandioca</string>
+    <string name="Mandioquinha_salsa">Mandioquinha-salsa</string>
+    <string name="Manga">Manga</string>
+    <string name="Maracujá">Maracujá</string>
+    <string name="Milho">Milho</string>
+    <string name="Morango">Morango</string>
+    <string name="Nectarina">Nectarina</string>
+    <string name="Nêspera">Nêspera</string>
+    <string name="Ornamentais">Ornamentais</string>
+    <string name="Pastagem">Pastagem</string>
+    <string name="Pepino">Pepino</string>
+    <string name="Pêssego">Pêssego</string>
+    <string name="Pimenta">Pimenta</string>
+    <string name="Pimenta_do_Reino">Pimenta-do-Reino</string>
+    <string name="Pimentão">Pimentão</string>
+    <string name="Pupunha">Pupunha</string>
+    <string name="Quiabo">Quiabo</string>
+    <string name="Rabanete">Rabanete</string>
+    <string name="Repolho">Repolho</string>
+    <string name="Salsa">Salsa</string>
+    <string name="Seringueira">Seringueira</string>
+    <string name="Tomate">Tomate</string>
+    <string name="Uva">Uva</string>
 
 
     <string name="kg_ha_gesso">Kg/ha de gesso</string>
@@ -141,7 +165,10 @@
     <string name="txt_produtor">Produtor:</string>
     <string name="txt_qtd_gesso">Quantidade de gesso =</string>
     <string name="txt_result_analise_solo">Resultado da análise do solo da <u>camada de 20-40 cm</u></string>
-        <string name="txt_subs_l1">700 L de solo (horizonte B)</string>
+
+    <!-- substrato-->
+    <string name="substrato">Substrato</string>
+    <string name="txt_subs_l1">700 L de solo (horizonte B)</string>
     <string name="txt_subs_l2">300 L de esterco de gado ou 100 L de esterco de galinha</string>
     <string name="txt_subs_l3">2 kg de calcário dolomítico</string>
     <string name="txt_subs_l4">4 kg de superfosfato simples</string>
@@ -170,6 +197,8 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="title_activity_abacate">Abacate</string>
 
     <!-- tela de plantio 2 V70 -->
+    <string name="plantio">Plantio</string>
+    <string name="vazio">Preencha todos os campos, por favor!</string>
     <string name="adubacao_plantio_formacao"><b>Adubação de Plantio e Formação</b></string>
     <string name="dimensoes_de_cova"><b>Dimensões de cova (cm): </b></string>
     <string name="analise_solo"><b>Análise do solo: </b></string>
@@ -195,5 +224,14 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="noventa_dias">3) 90 dias do plantio: </string>
     <string name="g_cova"> g/cova de </string>
     <string name="obs_plantio2v70"> Caso não seja possível a incorporação do calcário, dividir em doses de, no máximo <b>3 t/ha</b>, por vez, espaçadas de um período de, no mínimo, 10 meses.</string>
+
+    <!--abacate 1 a 2 anos-->
+    <string name="umadois_anos">1-2 anos</string>
+
+    <!--abacate 2 a 3 anos-->
+    <string name="doisatres_anos">2-3 anos</string>
+
+    <!--abacate produção-->
+    <string name="producao">Produção</string>
 </resources>
 

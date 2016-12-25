@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
-
+import android.widget.Toast;
 
 
 import br.com.softweb.npk.R;
@@ -40,7 +40,7 @@ public class RecomendacaoGesso extends AppCompatActivity {
         TextView gessoH = (TextView) findViewById(R.id.gessoHAlCx);
         TextView lbl_gesso = (TextView) findViewById(R.id.lbl_gesso);
         if (gessoK.getText().toString().isEmpty() || gessoCa.getText().toString().isEmpty() || gessoMg.getText().toString().isEmpty() || gessoAl.getText().toString().isEmpty() || gessoH.getText().toString().isEmpty()) {
-            lbl_gesso.setText("Nulo");
+            Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_LONG).show();
             return;
         }
         this.gessoKCx = Float.parseFloat(gessoK.getText().toString());
