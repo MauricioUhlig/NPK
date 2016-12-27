@@ -1,4 +1,4 @@
-package br.com.softweb.npk.activity.submenu.fragaduba.culturas.abacate;
+package br.com.softweb.npk.activity.submenu.repetentes;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

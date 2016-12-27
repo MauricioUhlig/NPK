@@ -19,16 +19,17 @@ import java.util.List;
 
 import br.com.softweb.npk.R;
 
-import br.com.softweb.npk.activity.submenu.fragaduba.culturas.abacate.FragmentDoisaTresAnos;
-import br.com.softweb.npk.activity.submenu.fragaduba.culturas.abacate.FragmentProducao;
-import br.com.softweb.npk.activity.submenu.fragaduba.culturas.abacate.FragmentUmaDoisAnos;
+import br.com.softweb.npk.activity.submenu.repetentes.FragmentDoisaTresAnos;
+import br.com.softweb.npk.activity.submenu.repetentes.FragmentProducao;
+import br.com.softweb.npk.activity.submenu.repetentes.FragmentUmaDoisAnos;
 import br.com.softweb.npk.activity.submenu.repetentes.Substrato;
 import br.com.softweb.npk.activity.submenu.repetentes.Fragment_Plantio2V70;
-import br.com.softweb.npk.calculo.plantio2v70;
+import br.com.softweb.npk.calculo.CalculoGeral;
 
 
 public class Abacate extends AppCompatActivity {
     private float x, y, z, p_meh, k_meh, mat_org, sat_bases, ctc, prnt;
+    private int cte1, cte2, cte3;
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
@@ -137,7 +138,8 @@ public class Abacate extends AppCompatActivity {
             this.prnt = Float.parseFloat(Prnt.getText().toString());
 
             //calculando
-            plantio2v70 calculo = new plantio2v70(this.x, this.y, this.z, this.p_meh, this.k_meh, this.mat_org, this.sat_bases, this.ctc, this.prnt);
+            CalculoGeral calculo = new CalculoGeral();
+            calculo.setAll(this.x, this.y, this.z, this.p_meh, this.k_meh, this.mat_org, this.sat_bases, this.ctc, this.prnt, 70);
             esterco.setText(String.valueOf(calculo.esterco()));
             superfosfato.setText(String.valueOf(calculo.SSg()));
             calcario.setText(String.valueOf(calculo.calcarioGcova()));
@@ -146,9 +148,9 @@ public class Abacate extends AppCompatActivity {
             trintadias.setText("40");
             sessentadias.setText("50");
             noventadias.setText("60");
-            adubo.setText(calculo.adubo());
-            adubo1.setText(calculo.adubo());
-            adubo2.setText(calculo.adubo());
+            adubo.setText(calculo.aduboAbacate());
+            adubo1.setText(calculo.aduboAbacate());
+            adubo2.setText(calculo.aduboAbacate());
 
         }
     }

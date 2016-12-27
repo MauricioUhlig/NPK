@@ -117,7 +117,7 @@
                     android:onClick="recGesso" />
 
             </LinearLayout>
-           <!-- <LinearLayout
+           <LinearLayout
                 android:layout_weight="1"
                 android:weightSum="10"
                 android:orientation="horizontal"
@@ -276,7 +276,7 @@
                     android:textSize="@dimen/tamanho_titulo"
                     android:textColor="@color/branco" />
 
-            </LinearLayout>-->
+            </LinearLayout>
             <TextView
                 android:padding="@dimen/activity_vertical_margin"
                 android:layout_width="wrap_content"

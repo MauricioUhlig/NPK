@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.softweb.npk.activity.submenu.fragaduba.culturas.abacate.FragmentUmaDoisAnos">
+    tools:context="br.com.softweb.npk.activity.submenu.repetentes.FragmentUmaDoisAnos">
 
 
 
