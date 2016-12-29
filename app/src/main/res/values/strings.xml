@@ -128,6 +128,7 @@
     <string name="Al_cmolc_dm_3">Al (cmolc/dm³)</string>
     <string name="H_Al_cmolc_dm_3">H+Al (cmolc/dm³)</string>
 
+    <string name="tit_calagem"><b>Calagem</b></string>
     <string name="tit_sobre">Softweb - Apps Development</string>
     <string name="tit_substrato">Adubação do substrato para a produção de mudas</string>
     <string name="tit_adubMicro">Adubação com Micronutrientes</string>
@@ -210,6 +211,7 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="prnt_calcario">PRNT do calcário</string>
     <string name="mg_dm3">mg/dm³</string>
     <string name="percent">%</string>
+    <string name="tha">t/ha</string>
     <string name="cmolc_dm3">cmolc/dm³</string>
     <string name="aplicacao_cova"><b>Aplicação na cova: </b></string>
     <string name="l_esterco"> L de esterco de curral</string>
@@ -227,11 +229,30 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
 
     <!--abacate 1 a 2 anos-->
     <string name="umadois_anos">1-2 anos</string>
+    <string name="titumadoisanos"><b>Adubação de primeiro ano</b></string>
+    <string name="titumadoisanos_2"><b>Adubação de segundo ano</b></string>
+    <string name="umadois_l1">Primeira aplicação (no inicio do período chuvoso): </string>
+    <string name="umadois_l2">Segunda aplicação (dois meses após a primeira): </string>
+    <string name="umadois_l3">Terceira aplicação (dois meses após a segunda): </string>
+    <string name="de">de </string>
+    <string name="umadois_l4">Uma aplicação de </string>
+    <string name="g_planta">g/planta de </string>
+    <string name="umadois_l5">Três aplicações de</string>
+    <string name="qtd_calcario">Quantidade de calcário: </string>
 
-    <!--abacate 2 a 3 anos-->
-    <string name="doisatres_anos">2-3 anos</string>
+
+    <!--abacate 3 a 4 anos-->
+    <string name="doisatres_anos">3-4 anos</string>
+    <string name="titdoisatres_l1"><b>Adubação de terceiro ano</b></string>
+    <string name="titdoisatres_l2"><b>Adubação de quarto ano</b></string>
+
 
     <!--abacate produção-->
     <string name="producao">Produção</string>
+    <string name="titproducao"><b>Adubação de produção</b></string>
+    <string name="espaçamento">Espaçamento: </string>
+    <string name="produtividade_esperada">Produtividade esperada: </string>
+    <string name="pl_ha">pl/ha</string>
+
 </resources>
 

@@ -7,7 +7,7 @@ package br.com.softweb.npk.calculo;
 public class CalculoGeral {
 
     private float x, y, z, p, k, mat, sat, ctc, prnt;
-    int cte1, cte2, cte3;
+    int cte1;
     public CalculoGeral (){
     }
     public void setAll(float x, float y, float z, float p, float k,float mat, float sat, float ctc, float prnt, int cte1){
@@ -22,15 +22,24 @@ public class CalculoGeral {
         this.prnt = prnt;
         this.cte1 = cte1;
     }
-    public void setSimples(float p, float k, float sat, float ctc, float prnt , int cte1, int cte2, int cte3){
+    public void setSimples(float p, float k,float mat, float sat, float ctc, float prnt , int cte1){
         this.p = p;
         this.k= k;
+        this.mat = mat;
         this.sat = sat;
         this.ctc = ctc;
         this.prnt = prnt;
         this.cte1 = cte1;
-        this.cte2 = cte2;
-        this.cte3 = cte3;
+    }
+    public void setBasic(float p, float k){
+        this.p = p;
+        this.k= k;
+    }
+    public void setCalagem(int cte1,float sat, float ctc, float prnt){
+        this.sat = sat;
+        this.ctc = ctc;
+        this.prnt = prnt;
+        this.cte1 = cte1;
     }
 
     public float volumeCova(){
@@ -72,5 +81,19 @@ public class CalculoGeral {
         else if (k>=60 && k<120) return "20-00-15";
         else if (k>=120 && k<220) return "20-00-10";
         else return "Sulfato de Amônio";
+    }
+    public float fosforo(){
+        if (p<10)return 100;
+        else if(p>=10 && p<20)return 80;
+        else if(p>=20 && p<50)return 40;
+        else return 0;
+    }
+    public String adubo4parametros(int a, int b, int c, int d){
+        if(k<a)return "20-00-30";
+        else if(k>=a && k<b) return "20-00-20";
+        else if (k>=b && k<c)return "20-00-15";
+        else if (k>=c && k<d)return "20-00-10";
+        else return "Sulfato de Amônio";
+
     }
 }
