@@ -22,6 +22,7 @@
     import br.com.softweb.npk.activity.submenu.repetentes.FragmentDoisaTresAnos;
     import br.com.softweb.npk.activity.submenu.repetentes.FragmentProducao;
     import br.com.softweb.npk.activity.submenu.repetentes.FragmentUmaDoisAnos;
+    import br.com.softweb.npk.activity.submenu.repetentes.Observacoes;
     import br.com.softweb.npk.activity.submenu.repetentes.Substrato;
     import br.com.softweb.npk.activity.submenu.repetentes.Fragment_Plantio2V70;
     import br.com.softweb.npk.calculo.CalculoGeral;
@@ -58,6 +59,7 @@
             adapter.addFrag(new FragmentUmaDoisAnos(),getText(R.string.umadois_anos).toString());
             adapter.addFrag(new FragmentDoisaTresAnos(),getText(R.string.doisatres_anos).toString());
             adapter.addFrag(new FragmentProducao(),getText(R.string.producao).toString());
+            adapter.addFrag(new Observacoes(),getText(R.string.tit_obs).toString());
             viewPager.setAdapter(adapter);
         }
 

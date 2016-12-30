@@ -225,7 +225,7 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="sessenta_dias">2) 60 dias do plantio: </string>
     <string name="noventa_dias">3) 90 dias do plantio: </string>
     <string name="g_cova"> g/cova de </string>
-    <string name="obs_plantio2v70"> Caso não seja possível a incorporação do calcário, dividir em doses de, no máximo <b>3 t/ha</b>, por vez, espaçadas de um período de, no mínimo, 10 meses.</string>
+
 
     <!--abacate 1 a 2 anos-->
     <string name="umadois_anos">1-2 anos</string>
@@ -253,6 +253,16 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="espaçamento">Espaçamento: </string>
     <string name="produtividade_esperada">Produtividade esperada: </string>
     <string name="pl_ha">pl/ha</string>
+
+    <!--observações de adubação-->
+    <string name="tit_obs">Observações</string>
+    <string name="obs_1"> A primeira aplicação deve ser feita na florada e as demais, espaçadas de 2 meses.</string>
+    <string name="obs_2"> Em lavouras não irrigadas, as adubações devem ser feitas em períodos de chuva.</string>
+    <string name="obs_3"> Fazer monitoramento com análise foliar para evitar desbalanços.</string>
+    <string name="obs_4"> Caso não seja possível a incorporação do calcário, dividir em doses de, no máximo <b>3 t/ha</b>, por vez, espaçadas de um período de, no mínimo, 10 meses.</string>
+    <string name="obs_5"> Em lavouras novas ou com espaçamento largo, deve-se aplicar o calcário em faixas,
+        nas linhas das plantas. Não aplicar calcário nas ruas (quando largas) para evitar a mineralização rápida da matéria orgânica.</string>
+    <string name="title_activity_abacaxi">Abacaxi</string>
 
 </resources>
 

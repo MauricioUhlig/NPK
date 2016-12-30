@@ -387,25 +387,6 @@
                     android:textColor="@color/colorAccent"
                     android:text="0"/>
             </LinearLayout>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:text="@string/txt_obs"
-                android:textColor="@color/PrimaryText"/>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="1)"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/obs_plantio2v70"/>
-            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
