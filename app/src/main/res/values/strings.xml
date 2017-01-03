@@ -264,5 +264,18 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
         nas linhas das plantas. Não aplicar calcário nas ruas (quando largas) para evitar a mineralização rápida da matéria orgânica.</string>
     <string name="title_activity_abacaxi">Abacaxi</string>
 
+    <!-- abacaxi -->
+    <string name="titabacaxi"><b>Adubação para a cultura de abacaxi</b></string>
+    <string name="espacamento1">Espaçamento¹:</string>
+    <string name="ummes">1) 1 mês após plantio:</string>
+    <string name="quatromes">2) 4 meses após plantio:</string>
+    <string name="oitomes">3) 8 meses após plantio:</string>
+    <string name="densidade_plantas">Densidade de plantas:</string>
+    <string name="obs_abacaxi_1"> O Espaçamento deve ser inserido na seguinte ordem [1] Entre fileiras duplas; [2] Entre linhas;
+    [3] Entre plantas nas linhas.</string>
+    <string name="obs_abacaxi_2"> Reduzir 10% de P2O5  para cada  5 toneladas de esterco de gado ou 2 toneladas de esterco de galinha;</string>
+    <string name="obs_abacaxi_3"> Adubação  da soca: Aplicar metade da recomendação acima, aplicando os adubos nas axilas
+       das folhas velhas, tomando o cuidado de não deixar cair adubo no interior da roseta foliar.</string>
+    <string name="obs_abacaxi_4"> Produtividade esperada = 50.000 kg/ha</string>
 </resources>
 

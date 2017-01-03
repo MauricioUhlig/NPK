@@ -46,6 +46,7 @@ public class CalculoGeral {
         return ((x*y*z)/1000);
     }
 
+
     public float esterco(){
         if(mat<1)return 15;
         else if(mat>=1 && mat<3)return 10;
@@ -60,6 +61,18 @@ public class CalculoGeral {
         }
         return 0;
     }
+    public float SSgAbacaxi(){
+        float ssg;
+        if(p<20)ssg=10;
+        else if (p>=20 && p<40)ssg=5;
+        else if (p>=40 && p<60)ssg=3;
+        else ssg=0;
+        if(ssg>0) {
+            return ssg;
+        }
+        return 0;
+    }
+
 
     public float calcarioTha(){
         return (((cte1-sat)*ctc)/prnt);

@@ -30,7 +30,6 @@
 
     public class Abacate extends AppCompatActivity {
         private float x, y, z, p_meh, k_meh, mat_org, sat_bases, ctc, prnt;
-        private int cte1, cte2, cte3;
         private Toolbar toolbar;
         private TabLayout tabLayout;
         private ViewPager viewPager;
@@ -344,6 +343,7 @@
         public void calcularProducao(View v){
             this.X = (TextView) findViewById(R.id.espa1);
             this.Y = (TextView) findViewById(R.id.espa2);
+            TextView densidade = (TextView) findViewById(R.id.densidade_plantas);
             this.Z = (TextView) findViewById(R.id.produtividade);
             this.P_meh = (TextView) findViewById(R.id.p_mehP);
             this.K_meh = (TextView) findViewById(R.id.k_mehP);
@@ -358,6 +358,7 @@
             this.x = Float.parseFloat(X.getText().toString());
             this.y = Float.parseFloat(Y.getText().toString());
             this.z = Float.parseFloat(Z.getText().toString());
+            densidade.setText("= "+(10000/(x*y))+" ");
             float var;
             if (p_meh<10)var=100;
             else if (p_meh>=10 && p_meh<20)var=80;
@@ -379,6 +380,7 @@
             CalculoGeral calculoGeral = new CalculoGeral();
             calculoGeral.setBasic(p_meh,k_meh);
             aduboPl2.setText(calculoGeral.adubo4parametros(60,120,200,280));
+
 
         }
         public void calcularCalagemP(View v){
