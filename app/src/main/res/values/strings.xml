@@ -250,9 +250,10 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <!--abacate produção-->
     <string name="producao">Produção</string>
     <string name="titproducao"><b>Adubação de produção</b></string>
-    <string name="espaçamento">Espaçamento: </string>
+    <string name="espaçamento">Espaçamento*: </string>
     <string name="produtividade_esperada">Produtividade esperada: </string>
     <string name="pl_ha">pl/ha</string>
+    <string name="mxm">*Espaçamento em <b>m</b> (metros)</string>
 
     <!--observações de adubação-->
     <string name="tit_obs">Observações</string>
@@ -277,5 +278,11 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="obs_abacaxi_3"> Adubação  da soca: Aplicar metade da recomendação acima, aplicando os adubos nas axilas
        das folhas velhas, tomando o cuidado de não deixar cair adubo no interior da roseta foliar.</string>
     <string name="obs_abacaxi_4"> Produtividade esperada = 50.000 kg/ha</string>
+    <string name="title_activity_abobora_rasterira">AboboraRasterira</string>
+
+    <!--Abobora rasteira -->
+    <string name="tit_abobora_rasteira"><b>Adubação para a cultura de Abóbora Rasteira</b></string>
+    <string name="recomendacao"><b>Recomendação</b></string>
+    <string name="qtd_esterco_abobora_ras"><b>5</b> litros  esterco  bovino ou  <b>10</b> g/cova de</string>
 </resources>
 
