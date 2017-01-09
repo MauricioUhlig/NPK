@@ -24,6 +24,7 @@ import br.com.softweb.npk.activity.submenu.fragaduba.FragmentAZ;
 import br.com.softweb.npk.activity.submenu.fragaduba.FragmentGrupo;
 import br.com.softweb.npk.activity.submenu.fragaduba.culturas.Abacate;
 import br.com.softweb.npk.activity.submenu.fragaduba.culturas.Abacaxi;
+import br.com.softweb.npk.activity.submenu.fragaduba.culturas.AboboraRasterira;
 
 
 public class RecoAduba extends AppCompatActivity {
@@ -89,6 +90,10 @@ public class RecoAduba extends AppCompatActivity {
     }
     public void recAbacaxi(View v){
         Intent it = new Intent(this, Abacaxi.class);
+        startActivity(it);
+    }
+    public void recAbobRasteira(View v){
+        Intent it = new Intent(this, AboboraRasterira.class);
         startActivity(it);
     }
 }

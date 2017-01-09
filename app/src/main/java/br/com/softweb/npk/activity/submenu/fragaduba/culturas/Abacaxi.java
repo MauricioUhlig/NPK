@@ -13,6 +13,7 @@ import br.com.softweb.npk.R;
 import br.com.softweb.npk.calculo.CalculoGeral;
 
 public class Abacaxi extends AppCompatActivity {
+
     private float x, y, z, p_meh, k_meh, sat_bases, ctc, prnt;
     private TextView X,Y,Z,P_meh,K_meh,Sat_bases,Ctc,Prnt;
     @Override

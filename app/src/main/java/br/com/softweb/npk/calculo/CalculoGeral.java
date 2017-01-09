@@ -72,6 +72,18 @@ public class CalculoGeral {
         }
         return 0;
     }
+    public float SSgAbobRaste(){
+        float ssg;
+        if(p<20)ssg=230;
+        else if (p>=20 && p<60)ssg=180;
+        else if (p>=60 && p<100)ssg=130;
+        else if (p>100 && p<150)ssg=80;
+        else ssg=0;
+        if(ssg>0) {
+            return ssg;
+        }
+        return 0;
+    }
 
 
     public float calcarioTha(){
