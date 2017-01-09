@@ -284,9 +284,9 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="tit_abobora_rasteira"><b>Adubação para a cultura de Abóbora Rasteira</b></string>
     <string name="recomendacao"><b>Recomendação</b></string>
     <string name="qtd_esterco_abobora_ras"><b>5</b> litros  esterco  bovino ou  <b>10</b> g/cova de</string>
-    <string name="abob_15dias">15 dias após transplantio:</string>
-    <string name="abob_30dias">30 dias após transplantio:</string>
-    <string name="abob_50">50 dias após transplantio:</string>
+    <string name="abob_15dias">1) 15 dias após transplantio:</string>
+    <string name="abob_30dias">2) 30 dias após transplantio:</string>
+    <string name="abob_50">3) 50 dias após transplantio:</string>
     <string name="abob_obs1"> Se utilizar esterco de cama de aves, reduzir a dose pela metade. Se utilizar esterco de gaiola, reduzir a dose para 1/3.  Se utilizar composto, aplicar a mesma dose do esterco bovino.</string>
     <string name="abob_obs2"> Reduzir a dose de nitrogênio conforme o vigor das plantas.</string>
     <string name="abob_obs3"> Produtividade esperada = 20.000 a 24.000 kg/ha.</string>

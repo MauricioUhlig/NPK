@@ -281,7 +281,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/ummes"/>
+                android:text="@string/abob_15dias"/>
             <TextView
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
@@ -311,7 +311,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/quatromes"/>
+                android:text="@string/abob_30dias"/>
             <TextView
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
@@ -341,7 +341,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/oitomes"/>
+                android:text="@string/abob_50"/>
             <TextView
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
