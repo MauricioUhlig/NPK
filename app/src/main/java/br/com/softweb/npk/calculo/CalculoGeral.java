@@ -84,6 +84,18 @@ public class CalculoGeral {
         }
         return 0;
     }
+    public float SSgAbobMoita(){
+        float ssg;
+        if(p<20)ssg=100;
+        else if (p>=20 && p<60)ssg=80;
+        else if (p>=60 && p<100)ssg=60;
+        else if (p>100 && p<150)ssg=40;
+        else ssg=0;
+        if(ssg>0) {
+            return ssg;
+        }
+        return 0;
+    }
 
 
     public float calcarioTha(){
