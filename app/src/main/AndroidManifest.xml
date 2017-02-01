@@ -102,7 +102,7 @@
         </activity>
         <activity
             android:name=".activity.submenu.fragaduba.culturas.AlfaceAgriao"
-            android:label="@string/Alface_Agrião"
+            android:label="@string/act_tit_alface_agriao"
             android:parentActivityName=".activity.submenu.RecoAduba"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data

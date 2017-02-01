@@ -70,13 +70,13 @@ public class AlfaceAgriao extends AppCompatActivity {
 
         /*    //convertendo string to float
             this.x = Float.parseFloat(X.getText().toString());
-            this.y = Float.parseFloat(Y.getText().toString());
-            converteToFloat();*/
+            this.y = Float.parseFloat(Y.getText().toString());*/
+            converteToFloat();
 
 
             //calculando
             CalculoGeral calculo = new CalculoGeral();
-            calculo.setAll(this.x, this.y, 0, this.p_meh, this.k_meh, 0, this.sat_bases, this.ctc, this.prnt, 70);
+            calculo.setAll(0, 0, 0, this.p_meh, this.k_meh, 0, this.sat_bases, this.ctc, this.prnt, 70);
             superfosfato.setText(String.valueOf(calculo.SSgAbobRaste()));
             fte.setText("10");
             calagem.setText(String.valueOf(calculo.calagem()));

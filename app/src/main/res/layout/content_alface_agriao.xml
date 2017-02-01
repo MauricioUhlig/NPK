@@ -246,6 +246,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/g_m2"/>
             <TextView
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/superfosfato" />
@@ -268,6 +270,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/g_m2"/>
             <TextView
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/fte"/>

@@ -294,6 +294,7 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="abob_obs3"> Produtividade esperada = 20.000 a 24.000 kg/ha.</string>
 
     <!--alface agriao-->
+    <string name="act_tit_alface_agriao">Alface e Agrião</string>
     <string name="tit_alface_agriao"><b>Adubação para a cultura de Alface e Agrião</b></string>
     <string name="l_m2">L/m² de</string>
     <string name="esterco_bovino"><b>Esterco Bovíno</b></string>
