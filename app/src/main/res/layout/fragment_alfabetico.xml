@@ -85,16 +85,18 @@
                         android:paddingTop="@dimen/nav_header_vertical_spacing"/>
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                       android:layout_height="wrap_content"
                         android:text="@string/Alho"
                         android:textSize="@dimen/tamanho_subtitulo"
-                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"
+                        android:onClick="recAlho"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/Ameixa"
                         android:textSize="@dimen/tamanho_subtitulo"
-                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"
+                        android:onClick="recAmeixa"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

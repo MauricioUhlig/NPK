@@ -119,6 +119,13 @@ public class CalculoGeral {
         else if (k>=120 && k<220) return "20-00-10";
         else return "Sulfato de Amônio";
     }
+    public float fosforoAmeixa(){
+        if (p<10)return 100;
+        else if(p>=10 && p<20)return 80;
+        else if(p>=20 && p<40)return 40;
+        else if(p>=40 && p<60)return 20;
+        else return 0;
+    }
     public float fosforo(){
         if (p<10)return 100;
         else if(p>=10 && p<20)return 80;
