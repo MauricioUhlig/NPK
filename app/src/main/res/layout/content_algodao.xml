@@ -2,12 +2,11 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/content_abobora_rasterira"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
       app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="br.com.softweb.npk.activity.submenu.fragaduba.culturas.Alho"
-    tools:showIn="@layout/activity_alho">
+    tools:context="br.com.softweb.npk.activity.submenu.fragaduba.culturas.Algodao"
+    tools:showIn="@layout/activity_algodao">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,38 +18,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tit_alface_agriao"
+            android:text="@string/tit_algodao"
             android:textSize="@dimen/tamanho_subtitulo"/>
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/espaçamento" />
-
-            <TextView
-                android:layout_width="65dp"
-                android:layout_height="wrap_content"
-                android:text="0,25"
-                android:gravity="center"/>
-            <TextView
-                android:layout_width="20dp"
-                android:layout_height="wrap_content"
-                android:text="X"
-                android:gravity="center"/>
-            <TextView
-                android:layout_width="65dp"
-                android:layout_height="wrap_content"
-                android:text="0,25"
-                android:gravity="center"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="m" />
-
-        </LinearLayout>
+            android:text="@string/espa_algodao" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popu_algodao" />
         <TextView
             android:paddingTop="@dimen/activity_vertical_margin"
             android:layout_width="wrap_content"
