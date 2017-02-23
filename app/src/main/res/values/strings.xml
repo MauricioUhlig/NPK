@@ -326,6 +326,11 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="tit_algodao"><b>Adubação para a cultura de Algodão</b></string>
     <string name="espa_algodao">Espaçamento: 0,8 a 1,0 m entre linhas com 12 a 15 sementes por metro de sulco</string>
     <string name="popu_algodao">População de 120.000 a 187.000 pl/ha</string>
+    <string name="adubacao_por_m">Adubação por m de sulco:</string>
+    <string name="g_m">g/m de</string>
+    <string name="trinta_dias_emergencia">1) 30 dias da emergência</string>
+    <string name="cinquentaecinco_dias_emergencia">2) 55 dias da emergência</string>
+    <string name="obs_algodao2">Produtividade esperada: 2.000 a 2.500 Kg/ha</string>
 
 </resources>
 

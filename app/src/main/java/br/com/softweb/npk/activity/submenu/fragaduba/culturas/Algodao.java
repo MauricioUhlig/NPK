@@ -55,6 +55,7 @@ public class Algodao extends AppCompatActivity {
         else {
 
             //aplicação na cova
+            TextView qtd_adubo = (TextView) findViewById(R.id.qtd_adubo);
             TextView superfosfato = (TextView) findViewById(R.id.superfosfato);
             TextView fte = (TextView) findViewById(R.id.fte);
             TextView calagem = (TextView) findViewById(R.id.calagemf12);
@@ -64,7 +65,7 @@ public class Algodao extends AppCompatActivity {
             TextView adubo = (TextView) findViewById(R.id.adubo);
             TextView adubo1 = (TextView) findViewById(R.id.adubo1);
             TextView adubo2 = (TextView) findViewById(R.id.adubo2);
-           // TextView adubo3 = (TextView) findViewById(R.id.adubo3);
+            TextView adubo3 = (TextView) findViewById(R.id.adubo3);
 
 
 
@@ -77,15 +78,17 @@ public class Algodao extends AppCompatActivity {
             //calculando
             CalculoGeral calculo = new CalculoGeral();
             calculo.setAll(0, 0, 0, this.p_meh, this.k_meh, 0, this.sat_bases, this.ctc, this.prnt, 70);
+            aduboText = calculo.adubo4parametros(80,150,200,280);
+            qtd_adubo.setText("15");
+            adubo3.setText(aduboText);
             superfosfato.setText(String.valueOf(calculo.SSgAbobRaste()));
-            fte.setText("10");
+            fte.setText("5");
             calagem.setText(String.valueOf(calculo.calagem()));
             trintadias.setText("20");
-            sessentadias.setText("30");
-            aduboText = calculo.adubo4parametros(80,150,200,280);
+            sessentadias.setText("20");
             adubo.setText(aduboText);
             adubo1.setText(aduboText);
-//            adubo2.setText(aduboText);
+            adubo2.setText(aduboText);
 
 
         }
