@@ -77,18 +77,18 @@ public class Algodao extends AppCompatActivity {
 
             //calculando
             CalculoGeral calculo = new CalculoGeral();
-            calculo.setAll(0, 0, 0, this.p_meh, this.k_meh, 0, this.sat_bases, this.ctc, this.prnt, 70);
+            calculo.setAll(0, 0, 0, this.p_meh, this.k_meh, 0, this.sat_bases, this.ctc, this.prnt, 60);
             aduboText = calculo.adubo4parametros(80,150,200,280);
             qtd_adubo.setText("15");
             adubo3.setText(aduboText);
-            superfosfato.setText(String.valueOf(calculo.SSgAbobRaste()));
+            superfosfato.setText(String.valueOf(calculo.SSgAlgodao()));
             fte.setText("5");
             calagem.setText(String.valueOf(calculo.calagem()));
             trintadias.setText("20");
             sessentadias.setText("20");
             adubo.setText(aduboText);
             adubo1.setText(aduboText);
-            adubo2.setText(aduboText);
+            //adubo2.setText(aduboText);
 
 
         }

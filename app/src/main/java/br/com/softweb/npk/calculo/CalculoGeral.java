@@ -96,6 +96,16 @@ public class CalculoGeral {
         }
         return 0;
     }
+    public  float SSgAlgodao(){
+        float ssg;
+        if(p<10)ssg=100;
+        else if(p>=10 && p<20)ssg=70;
+        else if(p>=20 && p<100)ssg=40;
+        else if(p>=100 && p<200)ssg=20;
+        else ssg=0;
+        ssg = (ssg/10)*5;
+        return ssg;
+    }
 
 
     public float calcarioTha(){
