@@ -109,12 +109,21 @@ public class CalculoGeral {
         return  (((ssg/densidadeArroz())*1000)*5);
     }
 
+    public float SSgArrozSequeiro(){
+        float ssg;
+        if(p<10)ssg=75;
+        else if (p>=10 && p<20)ssg=50;
+        else if (p>=20 && p<100)ssg=25;
+        else ssg=0;
+        return  (((ssg/densidadeArroz())*1000)*5);
+    }
+
     public float densidadeArroz(){
         return ((100/(x/100))*100);
     }
 
-    public float qtdArrozInundado(){
-        return ((100/densidadeArroz())*5000);
+    public float qtdArroz(int c){
+        return ((c/densidadeArroz())*5000);
     }
 
     public  float SSgAlgodao(){

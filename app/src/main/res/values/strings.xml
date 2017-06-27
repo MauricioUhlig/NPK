@@ -348,5 +348,11 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
                                         (neste caso, não renovar a água de irrigação por dois dias);</string>
     <string name="arroz_inundado_obs4"> Produtividade esperada: 5 000 a 6 000 kg/ha.</string>
 
+    <string name="tit_arroz_sequeiro"><b>Adubação para a cultura de Arroz Sequeiro</b></string>
+    <string name="arroz_sequeiro_obs1"> 1ª adubação de cobertura: 50 dias da emergência (diferenciação do primórdo floral);</string>
+    <string name="arroz_sequeiro_obs2"> A aplicação dos adubos no sulco deve ser 5 cm abaixo e 5 cm ao lado das sementes;</string>
+    <string name="arroz_sequeiro_obs3"> Produtividade esperada: 2 500 a 3 000 kg/ha.</string>
+
+
 </resources>
 

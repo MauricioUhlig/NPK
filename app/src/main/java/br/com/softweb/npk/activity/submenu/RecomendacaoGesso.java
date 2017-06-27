@@ -40,7 +40,7 @@ public class RecomendacaoGesso extends AppCompatActivity {
         TextView gessoH = (TextView) findViewById(R.id.gessoHAlCx);
         TextView lbl_gesso = (TextView) findViewById(R.id.lbl_gesso);
         if (gessoK.getText().toString().isEmpty() || gessoCa.getText().toString().isEmpty() || gessoMg.getText().toString().isEmpty() || gessoAl.getText().toString().isEmpty() || gessoH.getText().toString().isEmpty()) {
-            Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_LONG).show();
+            Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
             return;
         }
         this.gessoKCx = Float.parseFloat(gessoK.getText().toString());

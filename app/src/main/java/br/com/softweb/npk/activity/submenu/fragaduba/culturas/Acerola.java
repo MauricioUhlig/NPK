@@ -164,7 +164,7 @@
             if (this.X.getText().toString().isEmpty()|| this.Y.getText().toString().isEmpty()|| this.Z.getText().toString().isEmpty()||
                     this.P_meh.getText().toString().isEmpty()|| this.K_meh.getText().toString().isEmpty()|| this.Mat_org.getText().toString().isEmpty()||
                     this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()){
-                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_LONG).show();
+                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
                 return;
             }
             else {
@@ -215,7 +215,7 @@
            if (this.P_meh.getText().toString().isEmpty()|| this.K_meh.getText().toString().isEmpty()
                   // ||this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()
             ){
-                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_LONG).show();
+                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
                 return;
             }
             converteToFloat(1);
@@ -245,7 +245,7 @@
             if (this.P_meh.getText().toString().isEmpty()|| this.K_meh.getText().toString().isEmpty()
                 // ||this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()
                     ){
-                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_LONG).show();
+                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
                 return;
             }
             converteToFloat(1);
@@ -268,7 +268,7 @@
             //verificacao de vazio
             if (this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()
                     ){
-                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_LONG).show();
+                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
                 return;
             }
             converteToFloat(2);
@@ -289,7 +289,7 @@
             if (this.P_meh.getText().toString().isEmpty()|| this.K_meh.getText().toString().isEmpty()
                 // ||this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()
                     ){
-                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_LONG).show();
+                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
                 return;
             }
             converteToFloat(1);
@@ -312,7 +312,7 @@
             if (this.P_meh.getText().toString().isEmpty()|| this.K_meh.getText().toString().isEmpty()
                 // ||this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()
                     ){
-                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_LONG).show();
+                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
                 return;
             }
             converteToFloat(1);
@@ -334,7 +334,7 @@
             //verificacao de vazio
             if (this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()
                     ){
-                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_LONG).show();
+                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
                 return;
             }
             converteToFloat(2);
@@ -355,7 +355,7 @@
                     this.P_meh.getText().toString().isEmpty()|| this.K_meh.getText().toString().isEmpty()
                 // ||this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()
                     ){
-                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_LONG).show();
+                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
                 return;
             }
             converteToFloat(1);
@@ -392,7 +392,7 @@
             //verificacao de vazio
             if (this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()
                     ){
-                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_LONG).show();
+                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
                 return;
             }
             converteToFloat(2);

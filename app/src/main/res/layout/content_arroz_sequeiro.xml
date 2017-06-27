@@ -2,12 +2,12 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/content_arroz_inundado"
+    android:id="@+id/content_arroz_sequeiro"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
       app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="br.com.softweb.npk.activity.submenu.fragaduba.culturas.ArrozInundado"
-    tools:showIn="@layout/activity_arroz_inundado">
+    tools:context="br.com.softweb.npk.activity.submenu.fragaduba.culturas.ArrozSequeiro"
+    tools:showIn="@layout/activity_arroz_sequeiro">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tit_arroz_inundado"
+            android:text="@string/tit_arroz_sequeiro"
             android:textSize="@dimen/tamanho_subtitulo"/>
         <LinearLayout
             android:layout_width="match_parent"
@@ -296,36 +296,6 @@
                 android:textColor="@color/colorAccent"
                 android:text="0"/>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingLeft="@dimen/activity_horizontal_margin">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/arroz_inundado_2Adubacao"/>
-            <TextView
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sessentadias"
-                android:textColor="@color/colorAccent"
-                android:text="0"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/g_m_de_sulco_de"/>
-            <TextView
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/adubo2"
-                android:textColor="@color/colorAccent"
-                android:text="0"/>
-        </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -340,19 +310,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1)"/>
-            <LinearLayout
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/arroz_inundado_obs1.1"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/arroz_inundado_obs1.2"/>
-            </LinearLayout>
+                android:text="@string/arroz_sequeiro_obs1"/>
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -365,7 +327,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/arroz_inundado_obs2"/>
+                android:text="@string/arroz_sequeiro_obs2"/>
 
         </LinearLayout>
         <LinearLayout
@@ -379,21 +341,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/arroz_inundado_obs3"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4)"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/arroz_inundado_obs4"/>
+                android:text="@string/arroz_sequeiro_obs3"/>
 
         </LinearLayout>
     </LinearLayout>

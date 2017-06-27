@@ -49,7 +49,7 @@ public class Algodao extends AppCompatActivity {
         //verificacao de vazio
         if (this.P_meh.getText().toString().isEmpty()|| this.K_meh.getText().toString().isEmpty()||
                 this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()){
-            Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_LONG).show();
+            Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
             return;
         }
         else {
