@@ -61,6 +61,7 @@ public class CalculoGeral {
         }
         return 0;
     }
+
     public float SSgAbacaxi(){
         float ssg;
         if(p<20)ssg=10;
@@ -72,6 +73,7 @@ public class CalculoGeral {
         }
         return 0;
     }
+
     public float SSgAbobRaste(){
         float ssg;
         if(p<20)ssg=230;
@@ -84,6 +86,7 @@ public class CalculoGeral {
         }
         return 0;
     }
+
     public float SSgAbobMoita(){
         float ssg;
         if(p<20)ssg=100;
@@ -96,6 +99,24 @@ public class CalculoGeral {
         }
         return 0;
     }
+
+    public float SSgArrozInundado(){
+        float ssg;
+        if(p<10)ssg=90;
+        else if (p>=10 && p<20)ssg=60;
+        else if (p>=20 && p<100)ssg=30;
+        else ssg=0;
+        return  (((ssg/densidadeArroz())*1000)*5);
+    }
+
+    public float densidadeArroz(){
+        return ((100/(x/100))*100);
+    }
+
+    public float qtdArrozInundado(){
+        return ((100/densidadeArroz())*5000);
+    }
+
     public  float SSgAlgodao(){
         float ssg;
         if(p<10)ssg=100;
@@ -106,7 +127,6 @@ public class CalculoGeral {
         ssg = (ssg/10)*5;
         return ssg;
     }
-
 
     public float calcarioTha(){
         return (((cte1-sat)*ctc)/prnt);
@@ -123,6 +143,7 @@ public class CalculoGeral {
         if(x>0)return x;
         return 0;
     }
+
     public String aduboAbacate(){
         if (k<60)return "20-00-20";
         else if (k>=60 && k<120) return "20-00-15";

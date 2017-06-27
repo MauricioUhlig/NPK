@@ -332,5 +332,21 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="cinquentaecinco_dias_emergencia">2) 55 dias da emergência</string>
     <string name="obs_algodao2">Produtividade esperada: 2.000 a 2.500 Kg/ha</string>
 
+    <!--Arroz-->
+    <string name="tit_arroz_inundado"><b>Adubação para a cultura de Arroz Inundado</b></string>
+    <string name="distancia_entre_sulcos">Distância entre sulcos: </string>
+    <string name="g_m_de_sulco_de">g/m de sulco de </string>
+    <string name="g_m_sulco_superfosfato"> g/m de suldo de <b>Superfosfato Simples</b></string>
+    <string name="g_m_sulco_fte"> g/m de sulco de <b>FTE</b></string>
+    <string name="arroz_inundado_1Adubacao"> 1ª Adubação*: </string>
+    <string name="arroz_inundado_2Adubacao"> 2ª Adubação*: </string>
+    <string name="arroz_inundado_obs1.1"> 1ª adubação de cobertura: 20 dias da emergência.</string>
+    <string name="arroz_inundado_obs1.2"> 2ª adubação de cobertura: 50 dias da emergência (diferenciação do primórdo floral);</string>
+    <string name="arroz_inundado_obs2"> Sob inundação nao utilizar N na forma nítrica;</string>
+    <string name="arroz_inundado_obs3"> Aplicação de cobertura poderá ser feita: A lanço ou em filete, após a retirada da agua
+                                        com posterior reinundação dois dias após; A lanço ou em filete sobre a lâmina de água
+                                        (neste caso, não renovar a água de irrigação por dois dias);</string>
+    <string name="arroz_inundado_obs4"> Produtividade esperada: 5 000 a 6 000 kg/ha.</string>
+
 </resources>
 
