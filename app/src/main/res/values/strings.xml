@@ -148,6 +148,7 @@
     <string name="title_activity_recomendacao_gesso">Gesso</string>
     <string name="title_activity_recomendacao_micronutrientes">Micronutrientes</string>
     <string name="title_activity_trans_unidade">Transformação de Unidades</string>
+    <string name="title_activity_banana">Banana</string>
 
     <string name="txt_apresenta_textoP1">Este App tem por objetivo facilitar os cálculos da quantidade de nutrientes a ser aplicada às culturas, com base na análise do solo e na produtividade esperada.</string>
     <string name="txt_apresenta_textoP2">É importante que cada técnico (usuário deste software) que detenha conhecimento referente à  nutrição de determinadas culturas, análise criticamente as quantidades e a forma de aplicação dos nutrientes e nos comunique para que as modificações sejam feitas, aumentando, assim, cada vez mais a exatidão das recomendações.</string>
@@ -353,6 +354,13 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="arroz_sequeiro_obs2"> A aplicação dos adubos no sulco deve ser 5 cm abaixo e 5 cm ao lado das sementes;</string>
     <string name="arroz_sequeiro_obs3"> Produtividade esperada: 2 500 a 3 000 kg/ha.</string>
 
+    <!--Banana-->
+    <string name="banana_aduba1">1) No pegamento da muda: </string>
+    <string name="banana_aduba2">2) 60 dias após: </string>
+    <string name="banana_aduba3">3) Na inflorescência: </string>
 
+    <string name="banana_obs2"> As adubações com nitrogênio devem ser feitas em períodos de chuva, entre os meses de setembro e março.</string>
+    <string name="banana_obs3"> Distribuir os adubos em círculo, tomando como referência o rebento mais jovem.</string>
+    <string name="banana_obs4"> A relação K/Mg deve ser maior que 0,4 para evitar o "azul da bananeira" por deficiência de Mg ou excesso de K.</string>
 </resources>
 

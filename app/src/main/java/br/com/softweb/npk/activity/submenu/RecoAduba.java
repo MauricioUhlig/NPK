@@ -33,6 +33,7 @@ import br.com.softweb.npk.activity.submenu.fragaduba.culturas.Alho;
 import br.com.softweb.npk.activity.submenu.fragaduba.culturas.Ameixa;
 import br.com.softweb.npk.activity.submenu.fragaduba.culturas.ArrozInundado;
 import br.com.softweb.npk.activity.submenu.fragaduba.culturas.ArrozSequeiro;
+import br.com.softweb.npk.activity.submenu.fragaduba.culturas.Banana;
 
 
 public class RecoAduba extends AppCompatActivity {
@@ -134,6 +135,10 @@ public class RecoAduba extends AppCompatActivity {
     }
     public void recArrozSequeiro (View v){
         Intent it = new Intent(this, ArrozSequeiro.class);
+        startActivity(it);
+    }
+    public void recBanana (View v){
+        Intent it = new Intent(this, Banana.class);
         startActivity(it);
     }
 }

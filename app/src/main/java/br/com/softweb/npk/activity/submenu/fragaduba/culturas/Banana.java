@@ -19,14 +19,17 @@
     import br.com.softweb.npk.R;
     import br.com.softweb.npk.activity.submenu.repetentes.FragmentDoisaTresAnos;
     import br.com.softweb.npk.activity.submenu.repetentes.FragmentProducao;
+    import br.com.softweb.npk.activity.submenu.repetentes.FragmentProducaoBanana;
     import br.com.softweb.npk.activity.submenu.repetentes.FragmentUmaDoisAnos;
     import br.com.softweb.npk.activity.submenu.repetentes.Fragment_Plantio2V70;
+    import br.com.softweb.npk.activity.submenu.repetentes.Fragment_PlantioBanana;
     import br.com.softweb.npk.activity.submenu.repetentes.Observacoes;
+    import br.com.softweb.npk.activity.submenu.repetentes.ObservacoesBanana;
     import br.com.softweb.npk.activity.submenu.repetentes.Substrato;
     import br.com.softweb.npk.calculo.CalculoGeral;
 
 
-    public class Acerola extends AppCompatActivity {
+    public class Banana extends AppCompatActivity {
         private float x, y, z, p_meh, k_meh, mat_org, sat_bases, ctc, prnt;
         private Toolbar toolbar;
         private TabLayout tabLayout;
@@ -36,7 +39,7 @@
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_acerola);
+            setContentView(R.layout.activity_banana);
 
             toolbar = (Toolbar) findViewById(R.id.toolbar);
             setSupportActionBar(toolbar);
@@ -51,12 +54,9 @@
 
         private void setupViewPager(ViewPager viewPager) {
             ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-            adapter.addFrag(new Substrato(), getText(R.string.substrato).toString());
-            adapter.addFrag(new Fragment_Plantio2V70(), getText(R.string.plantio).toString());
-            adapter.addFrag(new FragmentUmaDoisAnos(),getText(R.string.umadois_anos).toString());
-            adapter.addFrag(new FragmentDoisaTresAnos(),getText(R.string.doisatres_anos).toString());
-            adapter.addFrag(new FragmentProducao(),getText(R.string.producao).toString());
-            adapter.addFrag(new Observacoes(),getText(R.string.tit_obs).toString());
+            adapter.addFrag(new Fragment_PlantioBanana(), getText(R.string.plantio).toString());
+            adapter.addFrag(new FragmentProducaoBanana(),getText(R.string.producao).toString());
+            adapter.addFrag(new ObservacoesBanana(),getText(R.string.tit_obs).toString());
             viewPager.setAdapter(adapter);
         }
 
@@ -164,8 +164,7 @@
             if (this.X.getText().toString().isEmpty()|| this.Y.getText().toString().isEmpty()|| this.Z.getText().toString().isEmpty()||
                     this.P_meh.getText().toString().isEmpty()|| this.K_meh.getText().toString().isEmpty()|| this.Mat_org.getText().toString().isEmpty()||
                     this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()){
-                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT
-                ).show();
+                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
                 return;
             }
             else {
@@ -193,18 +192,19 @@
 
                 //calculando
                 CalculoGeral calculo = new CalculoGeral();
-                calculo.setAll(this.x, this.y, this.z, this.p_meh, this.k_meh, this.mat_org, this.sat_bases, this.ctc, this.prnt, 70);
+                calculo.setAll(this.x, this.y, this.z, this.p_meh, this.k_meh, this.mat_org, this.sat_bases, this.ctc, this.prnt, 80);
                 esterco.setText(String.valueOf(calculo.esterco()));
                 superfosfato.setText(String.valueOf(calculo.SSg()));
                 calcario.setText(String.valueOf(calculo.calcarioGcova()));
                 fte.setText("20");
                 calagem.setText(String.valueOf(calculo.calagem()));
-                trintadias.setText("25");
-                sessentadias.setText("30");
-                noventadias.setText("40");
-                adubo.setText(calculo.aduboAbacate());
-                adubo1.setText(calculo.aduboAbacate());
-                adubo2.setText(calculo.aduboAbacate());
+                trintadias.setText("100");
+                sessentadias.setText("200");
+                noventadias.setText("400");
+                String tipo_adubo = calculo.adubo4parametros(60,150,300,500);
+                adubo.setText(tipo_adubo);
+                adubo1.setText(tipo_adubo);
+                adubo2.setText(tipo_adubo);
 
             }
 
@@ -227,10 +227,10 @@
             TextView gramasf12L1 = (TextView) findViewById(R.id.gramasf12L1);
             gramasf12L1.setText("50");
             TextView gramasf12L2 = (TextView) findViewById(R.id.gramasf12L2);
-            gramasf12L2.setText("70");
+            gramasf12L2.setText("100");
             TextView gramasf12L3 = (TextView) findViewById(R.id.gramasf12L3);
-            gramasf12L3.setText("100");
-            String adubo = "20-00-20";
+            gramasf12L3.setText("150");
+            String adubo = calcula.adubo4parametros(60,120,200,280);
             TextView adubof12L1 = (TextView) findViewById(R.id.adubof12L1);
             TextView adubof12L2 = (TextView) findViewById(R.id.adubof12L2);
             TextView adubof12L3 = (TextView) findViewById(R.id.adubof12L3);
@@ -257,7 +257,7 @@
             TextView gramasf2L1 = (TextView) findViewById(R.id.gramasf2L1);
             gramasf2L1.setText(""+5*calcula.fosforo());
             TextView gramasf2L2 = (TextView) findViewById(R.id.gramasf2L2);
-            gramasf2L2.setText("200");
+            gramasf2L2.setText("167");
             String adubo = calcula.adubo4parametros(60,120,200,280);
             TextView adubof2L1 = (TextView) findViewById(R.id.adubof2L1);
             TextView adubof2L2 = (TextView) findViewById(R.id.adubof2L2);
@@ -274,15 +274,9 @@
             }
             converteToFloat(2);
             CalculoGeral calcula = new CalculoGeral();
-            calcula.setCalagem(60, sat_bases, ctc, prnt);
+            calcula.setCalagem(70, sat_bases, ctc, prnt);
             TextView calagem = (TextView) findViewById(R.id.calagemf12);
             calagem.setText(""+calcula.calagem());
-        }
-        public float fosforo(){
-            if(p_meh<10)return 150;
-            else if(p_meh>=10 && p_meh<20)return 100;
-            else if (p_meh>=20 && p_meh<50)return 80;
-            else return 0;
         }
         public void calcularTresano(View v){
             preencheAnalise(4);
@@ -298,9 +292,9 @@
             calcula.setBasic(p_meh,k_meh);
             //  calcula.setSimples(this.p_meh, this.k_meh, this.mat_org, this.sat_bases, this.ctc, this.prnt, 70);
             TextView gramasf3L1 = (TextView) findViewById(R.id.gramasf3L1);
-            gramasf3L1.setText(""+5*fosforo());
+            gramasf3L1.setText(""+5*2*calcula.fosforo());
             TextView gramasf3L2 = (TextView) findViewById(R.id.gramasf3L2);
-            gramasf3L2.setText("300");
+            gramasf3L2.setText("333");
             String adubo = calcula.adubo4parametros(60,120,200,280);
             TextView adubof3L1 = (TextView) findViewById(R.id.adubof3L1);
             TextView adubof3L2 = (TextView) findViewById(R.id.adubof3L2);
@@ -321,9 +315,9 @@
             calcula.setBasic(p_meh,k_meh);
             //  calcula.setSimples(this.p_meh, this.k_meh, this.mat_org, this.sat_bases, this.ctc, this.prnt, 70);
             TextView gramasf4L1 = (TextView) findViewById(R.id.gramasf4L1);
-            gramasf4L1.setText(""+5*fosforo());
+            gramasf4L1.setText(""+5*3*calcula.fosforo());
             TextView gramasf4L2 = (TextView) findViewById(R.id.gramasf4L2);
-            gramasf4L2.setText("300");
+            gramasf4L2.setText("333");
             String adubo = calcula.adubo4parametros(60,120,200,280);
             TextView adubof4L1 = (TextView) findViewById(R.id.adubof4L1);
             TextView adubof4L2 = (TextView) findViewById(R.id.adubof4L2);
@@ -340,7 +334,7 @@
             }
             converteToFloat(2);
             CalculoGeral calcula = new CalculoGeral();
-            calcula.setCalagem(60, sat_bases, ctc, prnt);
+            calcula.setCalagem(70, sat_bases, ctc, prnt);
             TextView calagem = (TextView) findViewById(R.id.calagemf34);
             calagem.setText(""+calcula.calagem());
         }
@@ -372,10 +366,10 @@
             var=(1000*((5*var)/(10000/(x*y))));
             TextView gramaPl1 = (TextView) findViewById(R.id.gramasPL1);
             gramaPl1.setText(""+var);
-            if (z<15)var=50;
-            else if(z>=15 && z<20)var = 70;
-            else if (z>=20 && z<30)var=90;
-            else var = 130;
+            if (z<6)var=100;
+            else if(z>=6 && z<10)var = 130;
+            else if (z>=10 && z<20)var=180;
+            else var = 240;
             var= ((1000*((var*5)/(10000/(x*y))))/3);
             TextView gramasPl2 = (TextView) findViewById(R.id.gramasPL2);
             gramasPl2.setText(""+var);
