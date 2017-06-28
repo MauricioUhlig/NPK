@@ -358,9 +358,23 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="banana_aduba1">1) No pegamento da muda: </string>
     <string name="banana_aduba2">2) 60 dias após: </string>
     <string name="banana_aduba3">3) Na inflorescência: </string>
-
+    <string name="irrigada">Irrigada</string>
+    <string name="nao_irrigada">Não Irrigada</string>
     <string name="banana_obs2"> As adubações com nitrogênio devem ser feitas em períodos de chuva, entre os meses de setembro e março.</string>
     <string name="banana_obs3"> Distribuir os adubos em círculo, tomando como referência o rebento mais jovem.</string>
     <string name="banana_obs4"> A relação K/Mg deve ser maior que 0,4 para evitar o "azul da bananeira" por deficiência de Mg ou excesso de K.</string>
+    <string name="quant_nutrientes"> Quantidade de Nutrientes: </string>
+    <string name="kg_ha_ano_N">kg/ha/ano de N</string>
+    <string name="kg_ha_ano_p2o5">kg/ha/ano de P2O5</string>
+    <string name="kg_ha_ano_k2o">kg/ha/ano de K2O</string>
+    <string name="banana_op1">1ª opção: </string>
+    <string name="banana_op2">2ª opção: </string>
+    <string name="banana_op3">3ª opção: </string>
+    <string name="banana_op4">4ª opção: </string>
+    <string name="banana_uma_aplicacao">Uma** aplicação de </string>
+    <string name="banana_parcelas">**Pode-se dividir em mais parcelas</string>
+    <string name="mo">MO</string>
+    <string name="dag_kg">dag/kg</string>
+
 </resources>
 

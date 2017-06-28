@@ -20,6 +20,7 @@
                 android:paddingTop="@dimen/activity_vertical_margin"
                 android:text="@string/titproducao"
                 android:textSize="@dimen/tamanho_subtitulo"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -84,6 +85,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
                         android:gravity="center"/>
+                    <TextView
+                        android:text="@string/mo"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center"/>
 
                 </LinearLayout>
                 <LinearLayout
@@ -105,6 +111,13 @@
                         android:ems="10"
                         android:inputType="numberDecimal"
                         android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/MO"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"/>
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="vertical"
@@ -121,129 +134,13 @@
                         android:layout_height="45dp"
                         android:layout_width="match_parent"
                         android:gravity="center_vertical" />
-            </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="@dimen/activity_vertical_margin">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/produtividade_esperada"/>
-                <EditText
-                    android:id="@+id/produtividade"
-                    android:layout_width="100dp"
-                    android:layout_height="45dp"
-                    android:ems="10"
-                    android:inputType="numberDecimal"
-                    android:gravity="center"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tha"/>
-            </LinearLayout>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btn_calcular"
-                android:background="@color/colorPrimaryDark"
-                android:textColor="@color/branco"
-                android:onClick="calcularProducao"
-                android:layout_gravity="right" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="4">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_weight="5">
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/umadois_l4"/>
-                </LinearLayout>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:text="0"
-                    android:id="@+id/gramasPL1"
-                    android:textColor="@color/colorAccent"
-                    android:layout_gravity="bottom" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/g_planta"
-                    android:layout_gravity="bottom"/>
-                <TextView
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/aduboPL1"
-                    android:text="00-00-00"
-                    android:textColor="@color/colorAccent"
-                    android:layout_gravity="bottom"/>
+                        android:text="@string/dag_kg"
+                        android:layout_height="45dp"
+                        android:layout_width="match_parent"
+                        android:gravity="center_vertical" />
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="4">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_weight="5">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/umadois_l5"/>
-                </LinearLayout>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:text="0"
-                    android:id="@+id/gramasPL2"
-                    android:textColor="@color/colorAccent"
-                    android:layout_gravity="bottom" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/g_planta"
-                    android:layout_gravity="bottom"/>
-                <TextView
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/aduboPL2"
-                    android:text="00-00-00"
-                    android:textColor="@color/colorAccent"
-                    android:layout_gravity="bottom"/>
             </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/activity_vertical_margin"
-                android:text="@string/tit_calagem"
-                android:textSize="@dimen/tamanho_subtitulo"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/analise_solo"
-                android:padding="@dimen/activity_vertical_margin"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -321,14 +218,64 @@
                         android:gravity="center_vertical"/>
                 </LinearLayout>
             </LinearLayout>
-            <Button
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/activity_vertical_margin">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/produtividade_esperada"/>
+                <EditText
+                    android:id="@+id/produtividade"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tha"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/irrigada"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/branco"
+                    android:onClick="calcularIrrigada"
+                    android:layout_gravity="left"
+                    android:layout_weight="0.4"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"></LinearLayout>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nao_irrigada"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/branco"
+                    android:onClick="calcularNaoIrrigada"
+                    android:layout_weight="0.4"/>
+
+            </LinearLayout>
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_calcular"
-                android:background="@color/colorPrimaryDark"
-                android:textColor="@color/branco"
-                android:onClick="calcularCalagemP"
-                android:layout_gravity="right" />
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/recomendacao"
+                android:textSize="@dimen/tamanho_subtitulo"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -350,12 +297,338 @@
                     android:layout_height="wrap_content"
                     android:text="@string/tha"/>
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quant_nutrientes"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:id="@+id/qtd_n"
+                            android:textColor="@color/colorAccent"
+                            android:text="0"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/kg_ha_ano_N"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:id="@+id/qtd_p2o5"
+                            android:textColor="@color/colorAccent"
+                            android:text="0"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/kg_ha_ano_p2o5"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:id="@+id/qtd_k2o"
+                            android:textColor="@color/colorAccent"
+                            android:text="0"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/kg_ha_ano_k2o"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/banana_op1"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:paddingLeft="@dimen/activity_horizontal_margin">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="5">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/umadois_l4"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="0"
+                    android:id="@+id/gramasCV1"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="bottom" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/g_superfosfato"
+                    android:layout_gravity="bottom"/>
+               <!-- <TextView
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aduboPL1"
+                    android:text="00-00-00"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="bottom"/> -->
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:paddingLeft="@dimen/activity_horizontal_margin">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="5">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/banana_uma_aplicacao"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="0"
+                    android:id="@+id/gramasCV1_2"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="bottom" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/g_cova"
+                    android:layout_gravity="bottom"/>
+                <TextView
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aduboCV1_2"
+                    android:text="00-00-00"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="bottom"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/banana_op2"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:paddingLeft="@dimen/activity_horizontal_margin">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="5">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/umadois_l4"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="0"
+                    android:id="@+id/gramasCV2"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="bottom" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/g_superfosfato"
+                    android:layout_gravity="bottom"/>
+                <!-- <TextView
+                     android:paddingLeft="5dp"
+                     android:paddingRight="5dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/aduboPL1"
+                     android:text="00-00-00"
+                     android:textColor="@color/colorAccent"
+                     android:layout_gravity="bottom"/> -->
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:paddingLeft="@dimen/activity_horizontal_margin">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="5">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/banana_uma_aplicacao"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="0"
+                    android:id="@+id/gramasCV2_2"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="bottom" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/g_cova"
+                    android:layout_gravity="bottom"/>
+                <TextView
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aduboCV2_2"
+                    android:text="00-00-00"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="bottom"/>
+            </LinearLayout>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/banana_op3"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:paddingLeft="@dimen/activity_horizontal_margin">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="5">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/banana_uma_aplicacao"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="0"
+                    android:id="@+id/gramasCV3"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="bottom" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/g_cova"
+                    android:layout_gravity="bottom"/>
+                <TextView
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aduboCV3"
+                    android:text="00-00-00"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="bottom"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/banana_op4"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:paddingLeft="@dimen/activity_horizontal_margin">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="5">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/banana_uma_aplicacao"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="0"
+                    android:id="@+id/gramasCV4"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="bottom" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/g_cova"
+                    android:layout_gravity="bottom"/>
+                <TextView
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aduboCV4"
+                    android:text="00-00-00"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="bottom"/>
+            </LinearLayout>
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="@string/mxm"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/activity_vertical_margin"
-                android:text="@string/mxm"/>
+                android:text="@string/banana_parcelas"/>
         </LinearLayout>
     </ScrollView>
 
