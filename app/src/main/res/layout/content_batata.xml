@@ -2,12 +2,12 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/content_abobora_rasterira"
+    android:id="@+id/content_batata"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
       app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="br.com.softweb.npk.activity.submenu.fragaduba.culturas.Alho"
-    tools:showIn="@layout/activity_alho">
+    tools:context="br.com.softweb.npk.activity.submenu.fragaduba.culturas.Batata"
+    tools:showIn="@layout/activity_batata">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tit_alho"
+            android:text="@string/tit_batata"
             android:textSize="@dimen/tamanho_subtitulo"/>
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,25 +30,34 @@
                 android:layout_height="wrap_content"
                 android:text="@string/espaçamento" />
 
-            <TextView
+            <EditText
                 android:layout_width="65dp"
                 android:layout_height="wrap_content"
-                android:text="0,25"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/espa1"
                 android:gravity="center"/>
             <TextView
                 android:layout_width="20dp"
                 android:layout_height="wrap_content"
                 android:text="X"
                 android:gravity="center"/>
-            <TextView
+            <EditText
                 android:layout_width="65dp"
                 android:layout_height="wrap_content"
-                android:text="0,25"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/espa2"
                 android:gravity="center"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="m" />
+                android:text="= 0 "
+                android:id="@+id/densidade_plantas"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pl_ha"/>
 
         </LinearLayout>
         <TextView
@@ -204,7 +213,7 @@
             android:paddingTop="@dimen/txtObs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/adubacao_canteiro"/>
+            android:text="@string/adubacao_por_m"/>
         <LinearLayout
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:layout_width="match_parent"
@@ -213,20 +222,23 @@
             <TextView
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/adubacao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
-                android:textColor="@color/colorAccent"/>
+                android:text="0"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/l_m2"/>
+                android:text="@string/g_m"/>
             <TextView
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/adubo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/esterco_bovino"/>
+                android:text="00-00-00"/>
         </LinearLayout>
         <LinearLayout
             android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -244,13 +256,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/g_m2"/>
-            <TextView
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/superfosfato" />
+                android:text="@string/g_m_superfosfato"/>
         </LinearLayout>
         <LinearLayout
             android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -268,28 +274,18 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/g_m2"/>
-            <TextView
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/fte"/>
+                android:text="@string/g_m_fte"/>
         </LinearLayout>
-        <TextView
-            android:paddingTop="@dimen/activity_vertical_margin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/aduba_pos_plantio"/>
+
         <LinearLayout
+            android:paddingTop="@dimen/txtObs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingLeft="@dimen/activity_horizontal_margin">
+            android:orientation="horizontal">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/alfa_15dias"/>
+                android:text="@string/batata_aduba_cobertura"/>
             <TextView
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
@@ -301,37 +297,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/g_m2"/>
-            <TextView
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/adubo"
-                android:textColor="@color/colorAccent"
-                android:text="0"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingLeft="@dimen/activity_horizontal_margin">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/alfa_30_40dias"/>
-            <TextView
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/sessentadias"
-                android:textColor="@color/colorAccent"
-                android:text="0"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/g_m2"/>
+                android:text="@string/g_m"/>
             <TextView
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
@@ -339,85 +305,13 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/adubo1"
                 android:textColor="@color/colorAccent"
-                android:text="0"/>
+                android:text="00-00-00"/>
         </LinearLayout>
-
         <TextView
+            android:paddingTop="@dimen/txtObs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="@dimen/activity_vertical_margin"
-            android:text="@string/txt_obs"
-            android:textColor="@color/PrimaryText"/>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1)"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/alho_obs1"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2)"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/alho_obs2"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3)"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/alho_obs3"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4)"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/alho_obs4"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5)"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/alho_obs5"/>
-
-        </LinearLayout>
+            android:text="@string/mxm"/>
     </LinearLayout>
 
 </ScrollView>

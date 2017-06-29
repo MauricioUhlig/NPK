@@ -2,12 +2,12 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/content_abobora_rasterira"
+    android:id="@+id/content_beterraba"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
       app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="br.com.softweb.npk.activity.submenu.fragaduba.culturas.Alho"
-    tools:showIn="@layout/activity_alho">
+    tools:context="br.com.softweb.npk.activity.submenu.fragaduba.culturas.Beterraba"
+    tools:showIn="@layout/activity_beterraba">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tit_alho"
+            android:text="@string/tit_beterraba"
             android:textSize="@dimen/tamanho_subtitulo"/>
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,7 +43,7 @@
             <TextView
                 android:layout_width="65dp"
                 android:layout_height="wrap_content"
-                android:text="0,25"
+                android:text="0,10"
                 android:gravity="center"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -51,6 +51,7 @@
                 android:text="m" />
 
         </LinearLayout>
+
         <TextView
             android:paddingTop="@dimen/activity_vertical_margin"
             android:layout_width="wrap_content"
@@ -213,20 +214,21 @@
             <TextView
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/adubo3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
-                android:textColor="@color/colorAccent"/>
+                android:text="0"/>
             <TextView
+                android:paddingRight="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/l_m2"/>
             <TextView
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/esterco_bovino"/>
+
         </LinearLayout>
         <LinearLayout
             android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -242,15 +244,14 @@
                 android:layout_height="wrap_content"
                 android:text="0"/>
             <TextView
+                android:paddingRight="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/g_m2"/>
             <TextView
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/superfosfato" />
+                android:text="@string/superfosfato"/>
         </LinearLayout>
         <LinearLayout
             android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -266,12 +267,11 @@
                 android:textColor="@color/colorAccent"
                 android:text="0"/>
             <TextView
+                android:paddingRight="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/g_m2"/>
             <TextView
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/fte"/>
@@ -289,7 +289,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/alfa_15dias"/>
+                android:text="@string/abob_15dias"/>
             <TextView
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
@@ -319,7 +319,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/alfa_30_40dias"/>
+                android:text="@string/abob_30dias"/>
             <TextView
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
@@ -341,7 +341,36 @@
                 android:textColor="@color/colorAccent"
                 android:text="0"/>
         </LinearLayout>
-
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bete_40"/>
+            <TextView
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/noventadias"
+                android:textColor="@color/colorAccent"
+                android:text="0"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/g_m2"/>
+            <TextView
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adubo2"
+                android:textColor="@color/colorAccent"
+                android:text="0"/>
+        </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -359,7 +388,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/alho_obs1"/>
+                android:text="@string/abob_obs1"/>
 
         </LinearLayout>
         <LinearLayout
@@ -373,21 +402,21 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/alho_obs2"/>
+                android:text="@string/abob_obs2"/>
 
         </LinearLayout>
         <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3)"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/alho_obs3"/>
+            android:text="3)"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bete_obs"/>
 
         </LinearLayout>
         <LinearLayout
@@ -401,21 +430,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/alho_obs4"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5)"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/alho_obs5"/>
+                android:text="@string/bete_obs2"/>
 
         </LinearLayout>
     </LinearLayout>

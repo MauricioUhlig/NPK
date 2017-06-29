@@ -148,23 +148,26 @@
                         android:layout_height="wrap_content"
                         android:text="@string/Batata"
                         android:textSize="@dimen/tamanho_subtitulo"
-                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"
+                        android:onClick="recBatata"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/Batata_Doce"
                         android:textSize="@dimen/tamanho_subtitulo"
-                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/Berinjela"
-                        android:textSize="@dimen/tamanho_subtitulo"
-                        android:paddingTop="@dimen/nav_header_vertical_spacing"/>
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"
+                        android:onClick="recBatataDoce"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/Beterraba"
+                        android:textSize="@dimen/tamanho_subtitulo"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"
+                        android:onClick="recBeterraba"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Berinjela"
                         android:textSize="@dimen/tamanho_subtitulo"
                         android:paddingTop="@dimen/nav_header_vertical_spacing"/>
                     <TextView

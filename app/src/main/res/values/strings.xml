@@ -298,7 +298,7 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="act_tit_alface_agriao">Alface e Agrião</string>
     <string name="tit_alface_agriao"><b>Adubação para a cultura de Alface e Agrião</b></string>
     <string name="l_m2">L/m² de</string>
-    <string name="esterco_bovino"><b>Esterco Bovíno</b></string>
+    <string name="esterco_bovino"><b> Esterco Bovíno</b></string>
     <string name="adubacao_canteiro">Adubação por canteiro:</string>
     <string name="g_m2">g/m² de</string>
     <string name="alfa_15dias">1) 15 dias após plantio:</string>
@@ -337,7 +337,7 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="tit_arroz_inundado"><b>Adubação para a cultura de Arroz Inundado</b></string>
     <string name="distancia_entre_sulcos">Distância entre sulcos: </string>
     <string name="g_m_de_sulco_de">g/m de sulco de </string>
-    <string name="g_m_sulco_superfosfato"> g/m de suldo de <b>Superfosfato Simples</b></string>
+    <string name="g_m_sulco_superfosfato"> g/m de sulco de <b>Superfosfato Simples</b></string>
     <string name="g_m_sulco_fte"> g/m de sulco de <b>FTE</b></string>
     <string name="arroz_inundado_1Adubacao"> 1ª Adubação*: </string>
     <string name="arroz_inundado_2Adubacao"> 2ª Adubação*: </string>
@@ -375,6 +375,16 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="banana_parcelas">**Pode-se dividir em mais parcelas</string>
     <string name="mo">MO</string>
     <string name="dag_kg">dag/kg</string>
-
+    <!--Batatas-->
+    <string name="tit_batata"><b>Adubação para a cultura da Batata</b></string>
+    <string name="batata_aduba_cobertura">Adubação de cobertura:</string>
+    <string name="g_m_superfosfato"> g/m de <b>Superfosfato Simples</b></string>
+    <string name="g_m_fte"> g/m de <b>FTE</b></string>
+    <string name="tit_batata_doce"><b>Adubação para a cultura da Batata-Doce</b></string>
+    <!--Beterraba-->
+    <string name="tit_beterraba"><b>Adubação para a cultura da Beterraba</b></string>
+    <string name="bete_40">3) 40 dias após transplantio:</string>
+    <string name="bete_obs"> O calcário deve ser incorporado a 20 cm de profundidade antes de se formarem os canterios.</string>
+    <string name="bete_obs2"> Produtividade esperada: 40 000 kg/ha ou 1 818 caixas.</string>
 </resources>
 
