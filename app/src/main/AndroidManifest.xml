@@ -182,8 +182,35 @@
                 android:value="br.com.softweb.npk.activity.submenu.RecoAduba" />
         </activity>
         <activity
+            android:name=".activity.submenu.fragaduba.culturas.Berinjela"
+            android:label="@string/Berinjela"
+            android:parentActivityName=".activity.submenu.RecoAduba"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.softweb.npk.activity.submenu.RecoAduba" />
+        </activity>
+        <activity
             android:name=".activity.submenu.fragaduba.culturas.Beterraba"
             android:label="@string/Beterraba"
+            android:parentActivityName=".activity.submenu.RecoAduba"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.softweb.npk.activity.submenu.RecoAduba" />
+        </activity>
+        <activity
+            android:name=".activity.submenu.fragaduba.culturas.Brocolos"
+            android:label="@string/Brócolos"
+            android:parentActivityName=".activity.submenu.RecoAduba"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.softweb.npk.activity.submenu.RecoAduba" />
+        </activity>
+        <activity
+            android:name=".activity.submenu.fragaduba.culturas.Bucha"
+            android:label="@string/Bucha"
             android:parentActivityName=".activity.submenu.RecoAduba"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data

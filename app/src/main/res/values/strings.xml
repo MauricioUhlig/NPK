@@ -285,8 +285,8 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="tit_abobora_rasteira"><b>Adubação para a cultura de Abóbora Rasteira</b></string>
     <string name="tit_abobora_moita"><b>Adubação para a cultura de Abóbora de Moita</b></string>
     <string name="recomendacao"><b>Recomendação</b></string>
-    <string name="qtd_esterco_abobora_ras"><b>5</b> litros  esterco  bovino ou  <b>10</b> g/cova de</string>
-    <string name="qtd_esterco_abobora_moita"><b>2</b> litros  esterco  bovino ou  <b>10</b> g/cova de</string>
+    <string name="qtd_esterco_abobora_ras"><b>5</b> litros de esterco bovino ou <b>10</b> g/cova de</string>
+    <string name="qtd_esterco_abobora_moita"><b>2</b> litros de esterco  bovino ou <b>10</b> g/cova de</string>
     <string name="abob_15dias">1) 15 dias após transplantio:</string>
     <string name="abob_30dias">2) 30 dias após transplantio:</string>
     <string name="abob_50">3) 50 dias após transplantio:</string>
@@ -386,5 +386,19 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="bete_40">3) 40 dias após transplantio:</string>
     <string name="bete_obs"> O calcário deve ser incorporado a 20 cm de profundidade antes de se formarem os canterios.</string>
     <string name="bete_obs2"> Produtividade esperada: 40 000 kg/ha ou 1 818 caixas.</string>
+    <!--Berinjela-->
+    <string name="tit_berinjela"><b>Adubação para a cultura da Berinjela</b></string>
+    <string name="berinjela_20_40_dias">1) 20 e 40 dias: </string>
+    <string name="berinjela_60_80_100_dias">2) 60, 80 e 100 dias: </string>
+    <string name="berinjela_obs">Produtividade esperada: 70 t/ha</string>
+    <!--Brocolos-->
+    <string name="tit_brocolos"><b>Adubação para a cultura da Brócolos</b></string>
+    <string name="brocolos_15em15_dias">A cada 15 dias: </string>
+    <string name="brocolos_obs">Produtividade esperada: 20 000 kg/ha ou 13 000 maços</string>
+    <!--Bucha-->
+    <string name="tit_bucha"><b>Adubação para a cultura da Bucha Vegetal</b></string>
+    <string name="bucha_20dias">1) 20 dias do plantio: </string>
+    <string name="bucha_40dias">2) 40 dias do plantio: </string>
+    <string name="bucha_60dias">3) 60 dias do plantio: </string>
 </resources>
 
