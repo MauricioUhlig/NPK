@@ -400,5 +400,10 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="bucha_20dias">1) 20 dias do plantio: </string>
     <string name="bucha_40dias">2) 40 dias do plantio: </string>
     <string name="bucha_60dias">3) 60 dias do plantio: </string>
+    <!--Café-->
+    <string name="plantio_formacao">Plantio e Formação</string>
+    <string name="cafe_setembro">1) Setembro: </string>
+    <string name="cafe_novembro">2) Novembro: </string>
+    <string name="cafe_janeiro">3) Janeiro: </string>
 </resources>
 
