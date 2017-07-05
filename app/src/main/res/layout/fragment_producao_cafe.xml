@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.softweb.npk.activity.submenu.repetentes.FragmentProducaoBanana">
+    tools:context="br.com.softweb.npk.activity.submenu.repetentes.FragmentProducaoCafe">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -90,6 +90,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
                         android:gravity="center"/>
+                    <TextView
+                        android:text="@string/p_rem"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center"/>
 
                 </LinearLayout>
                 <LinearLayout
@@ -118,6 +123,13 @@
                         android:ems="10"
                         android:inputType="numberDecimal"
                         android:gravity="center"/>
+                    <EditText
+                        android:id="@+id/p_rem"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"/>
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="vertical"
@@ -136,6 +148,11 @@
                         android:gravity="center_vertical" />
                     <TextView
                         android:text="@string/dag_kg"
+                        android:layout_height="45dp"
+                        android:layout_width="match_parent"
+                        android:gravity="center_vertical" />
+                    <TextView
+                        android:text="@string/mg_l"
                         android:layout_height="45dp"
                         android:layout_width="match_parent"
                         android:gravity="center_vertical" />
@@ -239,36 +256,15 @@
                     android:layout_height="wrap_content"
                     android:text="@string/tha"/>
             </LinearLayout>
-            <LinearLayout
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="1">
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/irrigada"
-                    android:background="@color/colorPrimaryDark"
-                    android:textColor="@color/branco"
-                    android:onClick="calcularIrrigada"
-                    android:layout_gravity="left"
-                    android:layout_weight="0.4"/>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.2"></LinearLayout>
-
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/nao_irrigada"
-                    android:background="@color/colorPrimaryDark"
-                    android:textColor="@color/branco"
-                    android:onClick="calcularNaoIrrigada"
-                    android:layout_weight="0.4"/>
-
-            </LinearLayout>
+                android:text="@string/btn_calcular"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/branco"
+                android:onClick="calcularProducao"
+                android:layout_gravity="left"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -464,90 +460,6 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/umadois_l4"/>
-                </LinearLayout>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:text="0"
-                    android:id="@+id/gramasCV2"
-                    android:textColor="@color/colorAccent"
-                    android:layout_gravity="bottom" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/g_superfosfato"
-                    android:layout_gravity="bottom"/>
-                <!-- <TextView
-                     android:paddingLeft="5dp"
-                     android:paddingRight="5dp"
-                     android:layout_width="wrap_content"
-                     android:layout_height="wrap_content"
-                     android:id="@+id/aduboPL1"
-                     android:text="00-00-00"
-                     android:textColor="@color/colorAccent"
-                     android:layout_gravity="bottom"/> -->
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="4"
-                android:paddingLeft="@dimen/activity_horizontal_margin">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_weight="5">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/banana_uma_aplicacao"/>
-                </LinearLayout>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:text="0"
-                    android:id="@+id/gramasCV2_2"
-                    android:textColor="@color/colorAccent"
-                    android:layout_gravity="bottom" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/g_cova"
-                    android:layout_gravity="bottom"/>
-                <TextView
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/aduboCV2_2"
-                    android:text="00-00-00"
-                    android:textColor="@color/colorAccent"
-                    android:layout_gravity="bottom"/>
-            </LinearLayout>
-            <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/banana_op3"/>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="4"
-                android:paddingLeft="@dimen/activity_horizontal_margin">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_weight="5">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:text="@string/banana_uma_aplicacao"/>
                 </LinearLayout>
                 <TextView
@@ -574,51 +486,6 @@
                     android:textColor="@color/colorAccent"
                     android:layout_gravity="bottom"/>
             </LinearLayout>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/banana_op4"/>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="4"
-                android:paddingLeft="@dimen/activity_horizontal_margin">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_weight="5">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/banana_uma_aplicacao"/>
-                </LinearLayout>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:text="0"
-                    android:id="@+id/gramasCV4"
-                    android:textColor="@color/colorAccent"
-                    android:layout_gravity="bottom" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/g_cova"
-                    android:layout_gravity="bottom"/>
-                <TextView
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/aduboCV4"
-                    android:text="00-00-00"
-                    android:textColor="@color/colorAccent"
-                    android:layout_gravity="bottom"/>
-            </LinearLayout>
-
             <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

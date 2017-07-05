@@ -1,26 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fragment__plantio2_v70"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.softweb.npk.activity.submenu.repetentes.Fragment_Plantio2V70">
+    tools:context="br.com.softweb.npk.activity.submenu.repetentes.FragmentCafeArabicaRecepado">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
             android:paddingBottom="@dimen/activity_vertical_margin"
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/adubacao_plantio_formacao"
-                android:textSize="@dimen/tamanho_subtitulo" />
+            android:paddingTop="@dimen/activity_vertical_margin">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -28,32 +22,36 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/dimensoes_de_cova" />
+                    android:text="@string/espaçamento" />
 
                 <EditText
-                    android:layout_width="wrap_content"
+                    android:layout_width="65dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
                     android:ems="10"
-                    android:id="@+id/dim1"
-                    android:layout_weight="1"
+                    android:id="@+id/espa1"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="X"
                     android:gravity="center"/>
                 <EditText
-                    android:layout_width="wrap_content"
+                    android:layout_width="65dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
                     android:ems="10"
-                    android:id="@+id/dim2"
-                    android:layout_weight="1"
+                    android:id="@+id/espa2"
                     android:gravity="center"/>
-                <EditText
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:inputType="numberDecimal"
-                    android:ems="10"
-                    android:id="@+id/dim3"
-                    android:layout_weight="1"
-                    android:gravity="center"/>
+                    android:text="= 0 "
+                    android:id="@+id/densidade_plantas"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pl_ha"/>
 
             </LinearLayout>
             <TextView
@@ -78,11 +76,6 @@
                         android:gravity="center" />
                     <TextView
                         android:text="@string/k_mehlich"
-                        android:layout_width="match_parent"
-                        android:layout_height="45dp"
-                        android:gravity="center"/>
-                    <TextView
-                        android:text="@string/materia_org"
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
                         android:gravity="center"/>
@@ -116,13 +109,6 @@
                         android:gravity="center"/>
                     <EditText
                         android:id="@+id/k_meh"
-                        android:layout_width="match_parent"
-                        android:layout_height="45dp"
-                        android:ems="10"
-                        android:inputType="numberDecimal"
-                        android:gravity="center"/>
-                    <EditText
-                        android:id="@+id/mat_org"
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
                         android:ems="10"
@@ -171,11 +157,6 @@
                         android:layout_width="match_parent"
                         android:gravity="center_vertical"/>
                     <TextView
-                        android:text="@string/percent"
-                        android:layout_height="45dp"
-                        android:layout_width="match_parent"
-                        android:gravity="center_vertical"/>
-                    <TextView
                         android:text="@string/cmolc_dm3"
                         android:layout_height="45dp"
                         android:layout_width="match_parent"
@@ -193,30 +174,40 @@
                 android:text="@string/btn_calcular"
                 android:background="@color/colorPrimaryDark"
                 android:textColor="@color/branco"
-                android:onClick="calcularPlantio"/>
+                android:onClick="calcularAbobRast"/>
             <TextView
-                android:paddingTop="@dimen/txtObs"
+                android:paddingTop="@dimen/activity_vertical_margin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/aplicacao_cova"/>
+                android:text="@string/recomendacao"
+                android:textSize="@dimen/tamanho_subtitulo"/>
             <LinearLayout
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:layout_width="match_parent"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <TextView
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:textColor="@color/colorAccent"
-                    android:id="@+id/esterco"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="@string/qtd_calcario"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:id="@+id/calagemf12"
+                    android:textColor="@color/colorAccent"
                     android:text="0"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/l_esterco"/>
+                    android:text="@string/tha"/>
             </LinearLayout>
+            <TextView
+                android:paddingTop="@dimen/txtObs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cafe_desbota"/>
             <LinearLayout
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:layout_width="match_parent"
@@ -243,24 +234,6 @@
                 <TextView
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
-                    android:textColor="@color/colorAccent"
-                    android:id="@+id/calcario"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/g_calcario"/>
-            </LinearLayout>
-            <LinearLayout
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
                     android:id="@+id/fte"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -275,37 +248,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="@dimen/activity_horizontal_margin">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/calagem"/>
-                <TextView
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/calagem"
-                    android:textColor="@color/colorAccent"
-                    android:text="0"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tha_calcario"/>
-            </LinearLayout>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/aduba_pos_plantio"/>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:paddingLeft="@dimen/activity_horizontal_margin">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/trinta_dias"/>
+                    android:text="@string/cafe_30dias"/>
                 <TextView
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
@@ -335,7 +282,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/sessenta_dias"/>
+                    android:text="@string/cafe_70dias"/>
                 <TextView
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
@@ -365,7 +312,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/noventa_dias"/>
+                    android:text="@string/cafe_120dias"/>
                 <TextView
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
@@ -390,97 +337,52 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/titumadoisanos"/>
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/txt_obs"
+                android:textColor="@color/PrimaryText"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingLeft="@dimen/activity_horizontal_margin">
+                android:orientation="horizontal">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/cafe_setembro"/>
-                <TextView
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/setembro"
-                    android:textColor="@color/colorAccent"
-                    android:text="0"/>
+                    android:text="1)"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/g_cova"/>
-                <TextView
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/adubo_setembro"
-                    android:textColor="@color/colorAccent"
-                    android:text="0"/>
+                    android:text="@string/abob_obs1"/>
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingLeft="@dimen/activity_horizontal_margin">
+                android:orientation="horizontal">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/cafe_novembro"/>
-                <TextView
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/novembro"
-                    android:textColor="@color/colorAccent"
-                    android:text="0"/>
+                    android:text="2)"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/g_cova"/>
-                <TextView
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/adubo_novembro"
-                    android:textColor="@color/colorAccent"
-                    android:text="0"/>
+                    android:text="@string/abob_obs2"/>
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingLeft="@dimen/activity_horizontal_margin">
+                android:orientation="horizontal">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/cafe_janeiro"/>
-                <TextView
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/janeiro"
-                    android:textColor="@color/colorAccent"
-                    android:text="0"/>
+                    android:text="3)"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/g_cova"/>
-                <TextView
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/adubo_janeiro"
-                    android:textColor="@color/colorAccent"
-                    android:text="0"/>
+                    android:text="@string/abob_obs3"/>
+
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-</RelativeLayout>
+
+</FrameLayout>

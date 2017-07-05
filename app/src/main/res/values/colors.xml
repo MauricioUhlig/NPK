@@ -10,4 +10,5 @@
     <color name="SecundaryText">#757575</color>
     <color name="DividerColor">#BDBDBD</color>
     <color name="txtButtom">#4781dd</color>
+    <color name="red">#ff0000</color>
 </resources>

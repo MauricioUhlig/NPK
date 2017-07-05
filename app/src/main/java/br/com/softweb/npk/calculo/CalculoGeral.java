@@ -197,6 +197,11 @@ public class CalculoGeral {
         if(x>0) return x;
         return 0;
     }
+    public float calcarioGcovaCafe(int cte){
+        float x = (((((cte-sat)*ctc)/prnt)/2)*volumeCova());
+        if(x>0) return x;
+        return 0;
+    }
 
     public float calagem(){
         float x = (((cte1-sat)*ctc)/prnt);

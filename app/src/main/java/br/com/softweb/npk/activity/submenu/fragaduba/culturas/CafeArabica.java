@@ -17,6 +17,7 @@
     import java.util.List;
 
     import br.com.softweb.npk.R;
+    import br.com.softweb.npk.activity.submenu.repetentes.FragmentCafeArabicaRecepado;
     import br.com.softweb.npk.activity.submenu.repetentes.FragmentProducaoCafe;
     import br.com.softweb.npk.activity.submenu.repetentes.Fragment_PlantioCafe;
     import br.com.softweb.npk.activity.submenu.repetentes.Substrato;
@@ -51,6 +52,7 @@
             adapter.addFrag(new Substrato(), getText(R.string.substrato).toString());
             adapter.addFrag(new Fragment_PlantioCafe(), getText(R.string.plantio_formacao).toString());
             adapter.addFrag(new FragmentProducaoCafe(),getText(R.string.producao).toString());
+            adapter.addFrag(new FragmentCafeArabicaRecepado(),getText(R.string.cafe_recepado).toString());
           //  adapter.addFrag(new Observacoes(),getText(R.string.tit_obs).toString());
             viewPager.setAdapter(adapter);
         }
@@ -90,70 +92,27 @@
             this.Z = (TextView)findViewById(R.id.dim3);
         }
         //analise de solo
-        public void preencheAnalise(int x){
-            if(x==0) {
-                this.P_meh = (TextView) findViewById(R.id.p_meh);
-                this.K_meh = (TextView) findViewById(R.id.k_meh);
-                this.Mat_org = (TextView) findViewById(R.id.mat_org);
-                this.Sat_bases = (TextView) findViewById(R.id.sat_bases);
-                this.Ctc = (TextView) findViewById(R.id.ctc);
-                this.Prnt = (TextView) findViewById(R.id.prnt);
-            }else if(x==1){
-                this.P_meh = (TextView) findViewById(R.id.p_meh1);
-                this.K_meh = (TextView) findViewById(R.id.k_meh1);
-            }
-            else if(x==2){
-                this.P_meh = (TextView) findViewById(R.id.p_meh2);
-                this.K_meh = (TextView) findViewById(R.id.k_meh2);
-            }
-            else if(x==3){
-                this.Sat_bases = (TextView) findViewById(R.id.sat_bases1);
-                this.Ctc = (TextView) findViewById(R.id.ctc1);
-                this.Prnt = (TextView) findViewById(R.id.prnt1);
-            }
-            else if(x==4){
-                this.P_meh = (TextView) findViewById(R.id.p_meh3);
-                this.K_meh = (TextView) findViewById(R.id.k_meh3);
-            }
-            else if(x==5){
-                this.P_meh = (TextView) findViewById(R.id.p_meh4);
-                this.K_meh = (TextView) findViewById(R.id.k_meh4);
-            }
-            else if(x==6){
-                this.Sat_bases = (TextView) findViewById(R.id.sat_bases2);
-                this.Ctc = (TextView) findViewById(R.id.ctc2);
-                this.Prnt = (TextView) findViewById(R.id.prnt2);
-            }
-            else if(x==7){
-                this.Sat_bases = (TextView) findViewById(R.id.sat_basesP);
-                this.Ctc = (TextView) findViewById(R.id.ctcP);
-                this.Prnt = (TextView) findViewById(R.id.prntP);
-            }
+        public void preencheAnalise(){
+            this.Mat_org = (TextView) findViewById(R.id.mat_org);
+            this.P_meh = (TextView) findViewById(R.id.p_meh);
+            this.K_meh = (TextView) findViewById(R.id.k_meh);
+            this.Sat_bases = (TextView) findViewById(R.id.sat_bases);
+            this.Ctc = (TextView) findViewById(R.id.ctc);
+            this.Prnt = (TextView) findViewById(R.id.prnt);
         }
-        public void converteToFloat(int x){
-            if (x==0){
-                this.p_meh = Float.parseFloat(P_meh.getText().toString());
-                this.k_meh = Float.parseFloat(K_meh.getText().toString());
-                this.mat_org = Float.parseFloat(Mat_org.getText().toString());
-                this.sat_bases = Float.parseFloat(Sat_bases.getText().toString());
-                this.ctc = Float.parseFloat(Ctc.getText().toString());
-                this.prnt = Float.parseFloat(Prnt.getText().toString());
-            }
-            if (x==1){
-                this.p_meh = Float.parseFloat(P_meh.getText().toString());
-                this.k_meh = Float.parseFloat(K_meh.getText().toString());
-            }
-            if (x==2){
-                this.sat_bases = Float.parseFloat(Sat_bases.getText().toString());
-                this.ctc = Float.parseFloat(Ctc.getText().toString());
-                this.prnt = Float.parseFloat(Prnt.getText().toString());
-            }
+        public void converteToFloat(){
+            this.mat_org = Float.parseFloat(Mat_org.getText().toString());
+            this.p_meh = Float.parseFloat(P_meh.getText().toString());
+            this.k_meh = Float.parseFloat(K_meh.getText().toString());
+            this.sat_bases = Float.parseFloat(Sat_bases.getText().toString());
+            this.ctc = Float.parseFloat(Ctc.getText().toString());
+            this.prnt = Float.parseFloat(Prnt.getText().toString());
         }
 
 
         public void calcularPlantio(View v){
             preencheDim();
-            preencheAnalise(0);
+            preencheAnalise();
 
             //verificacao de vazio
             if (this.X.getText().toString().isEmpty()|| this.Y.getText().toString().isEmpty()|| this.Z.getText().toString().isEmpty()||
@@ -180,20 +139,24 @@
                 TextView adubo = (TextView) findViewById(R.id.adubo);
                 TextView adubo1 = (TextView) findViewById(R.id.adubo1);
                 TextView adubo2 = (TextView) findViewById(R.id.adubo2);
+                TextView adubo_setembro = (TextView) findViewById(R.id.adubo_setembro);
+                TextView adubo_novembro = (TextView) findViewById(R.id.adubo_novembro);
+                TextView adubo_janeiro = (TextView) findViewById(R.id.adubo_janeiro);
+
 
 
                 //convertendo string to float
                 this.x = Float.parseFloat(X.getText().toString());
                 this.y = Float.parseFloat(Y.getText().toString());
                 this.z = Float.parseFloat(Z.getText().toString());
-                converteToFloat(0);
+                converteToFloat();
 
                 //calculando
                 CalculoGeral calculo = new CalculoGeral();
                 calculo.setAll(this.x, this.y, this.z, this.p_meh, this.k_meh, this.mat_org, this.sat_bases, this.ctc, this.prnt, 60);
                 esterco.setText(String.valueOf(calculo.esterco()));
                 superfosfato.setText(String.valueOf(calculo.SSg()));
-                calcario.setText(String.valueOf(calculo.calcarioGcova()));
+                calcario.setText(String.valueOf(calculo.calcarioGcovaCafe(80)));
                 fte.setText("20");
                 calagem.setText(String.valueOf(calculo.calagem()));
                 trintadias.setText("40");
@@ -202,141 +165,17 @@
                 setembro.setText("60");
                 novembro.setText("80");
                 janeiro.setText("100");
-                adubo.setText(calculo.aduboAbacate());
-                adubo1.setText(calculo.aduboAbacate());
-                adubo2.setText(calculo.aduboAbacate());
+                String stradubo = calculo.aduboAbacate();
+                adubo.setText(stradubo);
+                adubo1.setText(stradubo);
+                adubo2.setText(stradubo);
+                adubo_setembro.setText(stradubo);
+                adubo_novembro.setText(stradubo);
+                adubo_janeiro.setText(stradubo);
 
             }
 
 
-        }
-        public void calcularUmano(View v){
-            preencheAnalise(1);
-            //verificacao de vazio
-           if (this.P_meh.getText().toString().isEmpty()|| this.K_meh.getText().toString().isEmpty()
-                  // ||this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()
-            ){
-                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
-                return;
-            }
-            converteToFloat(1);
-            CalculoGeral calcula = new CalculoGeral();
-            calcula.setBasic(p_meh,k_meh);
-          //  calcula.setSimples(this.p_meh, this.k_meh, this.mat_org, this.sat_bases, this.ctc, this.prnt, 70);
-            //primeiro ano
-            TextView gramasf12L1 = (TextView) findViewById(R.id.gramasf12L1);
-            gramasf12L1.setText("50");
-            TextView gramasf12L2 = (TextView) findViewById(R.id.gramasf12L2);
-            gramasf12L2.setText("100");
-            TextView gramasf12L3 = (TextView) findViewById(R.id.gramasf12L3);
-            gramasf12L3.setText("150");
-            String adubo = calcula.adubo4parametros(60,120,200,280);
-            TextView adubof12L1 = (TextView) findViewById(R.id.adubof12L1);
-            TextView adubof12L2 = (TextView) findViewById(R.id.adubof12L2);
-            TextView adubof12L3 = (TextView) findViewById(R.id.adubof12L3);
-            adubof12L1.setText(adubo);
-            adubof12L2.setText(adubo);
-            adubof12L3.setText(adubo);
-
-
-        }
-        public void calcularDoisano(View v){
-            preencheAnalise(2);
-            //verificacao de vazio
-            if (this.P_meh.getText().toString().isEmpty()|| this.K_meh.getText().toString().isEmpty()
-                // ||this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()
-                    ){
-                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
-                return;
-            }
-            converteToFloat(1);
-            CalculoGeral calcula = new CalculoGeral();
-            calcula.setBasic(p_meh,k_meh);
-            //  calcula.setSimples(this.p_meh, this.k_meh, this.mat_org, this.sat_bases, this.ctc, this.prnt, 70);
-            //primeiro ano
-            TextView gramasf2L1 = (TextView) findViewById(R.id.gramasf2L1);
-            gramasf2L1.setText(""+5*calcula.fosforo());
-            TextView gramasf2L2 = (TextView) findViewById(R.id.gramasf2L2);
-            gramasf2L2.setText("167");
-            String adubo = calcula.adubo4parametros(60,120,200,280);
-            TextView adubof2L1 = (TextView) findViewById(R.id.adubof2L1);
-            TextView adubof2L2 = (TextView) findViewById(R.id.adubof2L2);
-            adubof2L1.setText("Superfosfato simples");
-            adubof2L2.setText(adubo);
-        }
-        public void calcularCalagem(View v){
-            preencheAnalise(3);
-            //verificacao de vazio
-            if (this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()
-                    ){
-                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
-                return;
-            }
-            converteToFloat(2);
-            CalculoGeral calcula = new CalculoGeral();
-            calcula.setCalagem(70, sat_bases, ctc, prnt);
-            TextView calagem = (TextView) findViewById(R.id.calagemf12);
-            calagem.setText(""+calcula.calagem());
-        }
-        public void calcularTresano(View v){
-            preencheAnalise(4);
-            //verificacao de vazio
-            if (this.P_meh.getText().toString().isEmpty()|| this.K_meh.getText().toString().isEmpty()
-                // ||this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()
-                    ){
-                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
-                return;
-            }
-            converteToFloat(1);
-            CalculoGeral calcula = new CalculoGeral();
-            calcula.setBasic(p_meh,k_meh);
-            //  calcula.setSimples(this.p_meh, this.k_meh, this.mat_org, this.sat_bases, this.ctc, this.prnt, 70);
-            TextView gramasf3L1 = (TextView) findViewById(R.id.gramasf3L1);
-            gramasf3L1.setText(""+5*2*calcula.fosforo());
-            TextView gramasf3L2 = (TextView) findViewById(R.id.gramasf3L2);
-            gramasf3L2.setText("333");
-            String adubo = calcula.adubo4parametros(60,120,200,280);
-            TextView adubof3L1 = (TextView) findViewById(R.id.adubof3L1);
-            TextView adubof3L2 = (TextView) findViewById(R.id.adubof3L2);
-            adubof3L1.setText("Superfosfato simples");
-            adubof3L2.setText(adubo);
-        }
-        public void calcularQuartoano(View v){
-            preencheAnalise(5);
-            //verificacao de vazio
-            if (this.P_meh.getText().toString().isEmpty()|| this.K_meh.getText().toString().isEmpty()
-                // ||this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()
-                    ){
-                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
-                return;
-            }
-            converteToFloat(1);
-            CalculoGeral calcula = new CalculoGeral();
-            calcula.setBasic(p_meh,k_meh);
-            //  calcula.setSimples(this.p_meh, this.k_meh, this.mat_org, this.sat_bases, this.ctc, this.prnt, 70);
-            TextView gramasf4L1 = (TextView) findViewById(R.id.gramasf4L1);
-            gramasf4L1.setText(""+5*3*calcula.fosforo());
-            TextView gramasf4L2 = (TextView) findViewById(R.id.gramasf4L2);
-            gramasf4L2.setText("333");
-            String adubo = calcula.adubo4parametros(60,120,200,280);
-            TextView adubof4L1 = (TextView) findViewById(R.id.adubof4L1);
-            TextView adubof4L2 = (TextView) findViewById(R.id.adubof4L2);
-            adubof4L1.setText("Superfosfato simples");
-            adubof4L2.setText(adubo);
-        }
-        public void calcularCalagem2(View v){
-            preencheAnalise(6);
-            //verificacao de vazio
-            if (this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()
-                    ){
-                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
-                return;
-            }
-            converteToFloat(2);
-            CalculoGeral calcula = new CalculoGeral();
-            calcula.setCalagem(70, sat_bases, ctc, prnt);
-            TextView calagem = (TextView) findViewById(R.id.calagemf34);
-            calagem.setText(""+calcula.calagem());
         }
 
         public void calcularProducao(View v){
@@ -346,54 +185,77 @@
             this.Z = (TextView) findViewById(R.id.produtividade);
             this.P_meh = (TextView) findViewById(R.id.p_mehP);
             this.K_meh = (TextView) findViewById(R.id.k_mehP);
-            if (this.X.getText().toString().isEmpty()|| this.Y.getText().toString().isEmpty()|| this.Z.getText().toString().isEmpty()||
+            this.Sat_bases = (TextView) findViewById(R.id.sat_basesP);
+            this.Ctc = (TextView) findViewById(R.id.ctcP);
+            this.Prnt = (TextView) findViewById(R.id.prntP);
+            this.Mat_org = (TextView) findViewById(R.id.MO);
+            TextView P_rem = (TextView) findViewById(R.id.p_rem);
+            if (P_rem.getText().toString().isEmpty() || this.X.getText().toString().isEmpty()|| this.Y.getText().toString().isEmpty()|| this.Z.getText().toString().isEmpty()||
                     this.P_meh.getText().toString().isEmpty()|| this.K_meh.getText().toString().isEmpty()
-                // ||this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()
-                    ){
+                    ||this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()
+                    || this.Mat_org.getText().toString().isEmpty()  ){
                 Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
-                return;
+                return ;
             }
-            converteToFloat(1);
+            converteToFloat();
+            float p_rem= Float.parseFloat(P_rem.getText().toString());
             this.x = Float.parseFloat(X.getText().toString());
             this.y = Float.parseFloat(Y.getText().toString());
             this.z = Float.parseFloat(Z.getText().toString());
-            densidade.setText("= "+(10000/(x*y))+" ");
-            float var;
-            if (p_meh<10)var=100;
-            else if (p_meh>=10 && p_meh<20)var=80;
-            else if (p_meh>=20 && p_meh<50)var= 40;
-            else var=0;
-            var=(1000*((5*var)/(10000/(x*y))));
-            TextView gramaPl1 = (TextView) findViewById(R.id.gramasPL1);
-            gramaPl1.setText(""+var);
-            if (z<6)var=100;
-            else if(z>=6 && z<10)var = 130;
-            else if (z>=10 && z<20)var=180;
-            else var = 240;
-            var= ((1000*((var*5)/(10000/(x*y))))/3);
-            TextView gramasPl2 = (TextView) findViewById(R.id.gramasPL2);
-            gramasPl2.setText(""+var);
-            TextView aduboPl1 = (TextView)findViewById(R.id.aduboPL1);
-            aduboPl1.setText("Superfosfato simples");
-            TextView aduboPl2 = (TextView)findViewById(R.id.aduboPL2);
-            CalculoGeral calculoGeral = new CalculoGeral();
-            calculoGeral.setBasic(p_meh,k_meh);
-            aduboPl2.setText(calculoGeral.adubo4parametros(60,120,200,280));
+            int dens = (int) (10000/(x*y));
+            densidade.setText("= "+dens+" ");
+            CalculoGeral calcula = new CalculoGeral();
+            calcula.setAll(this.x, this.y, this.z, this.p_meh, this.k_meh, this.mat_org, this.sat_bases, this.ctc, this.prnt, 60);
 
+            TextView gramasCV1 = (TextView) findViewById(R.id.gramasCV1);
+            TextView gramasCV1_2 = (TextView) findViewById(R.id.gramasCV1_2);
+            TextView gramasCV3 = (TextView) findViewById(R.id.gramasCV3);
+            TextView calagem = (TextView) findViewById(R.id.calagemP);
+            TextView qtdN = (TextView) findViewById(R.id.qtd_n);
+            TextView qtdP = (TextView) findViewById(R.id.qtd_p2o5);
+            TextView qtdK = (TextView) findViewById(R.id.qtd_k2o);
+
+            int qtdAdubo = (int)((((qtdN()*100)/10)/dens)*1000);
+            String qtdSulfato = ""+(int)(1000*((qtdP(p_rem)*5)/dens));
+            String qtdop13 = ""+ qtdAdubo/2;
+
+            gramasCV1.setText(qtdSulfato);
+            gramasCV1_2.setText(qtdop13);
+            gramasCV3.setText(qtdop13);
+            calagem.setText(""+calcula.calagem());
+            qtdN.setText(""+(int)qtdN());
+            qtdP.setText(""+(int)qtdP(p_rem));
+            qtdK.setText(""+(int)qtdK());
+
+            TextView aduboCV1 = (TextView) findViewById(R.id.aduboCV1_2);
+            TextView aduboCV3 = (TextView) findViewById(R.id.aduboCV3);
+            String adubo1 = ""+(int)((qtdK()*100)/((qtdN()*100)/20));
+            aduboCV1.setText("20-00-"+adubo1);
+            aduboCV3.setText("20-"+(int)(qtdP(p_rem)*100/((qtdN()*100)/20))+"-"+adubo1);
 
         }
-        public void calcularCalagemP(View v){
-            preencheAnalise(7);
-            //verificacao de vazio
-            if (this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()
-                    ){
-                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
-                return;
-            }
-            converteToFloat(2);
-            CalculoGeral calcula = new CalculoGeral();
-            calcula.setCalagem(70, sat_bases, ctc, prnt);
-            TextView calagem = (TextView) findViewById(R.id.calagemP);
-            calagem.setText(""+calcula.calagem());
+        public float qtdN(){
+            float n;
+            n = this.mat_org;
+            if(n > 10)n = 10;
+            n = (float)((226.417+(2.465*this.z))-(10*n));
+            if(n<0) n = 0;
+            return n;
+        }
+        public double qtdP(float p_rem){
+            double n;
+            n = this.mat_org;
+            if(n > 10)n = 10;
+            n = (189+(0.537*this.z)-(8.26*this.p_meh)-(2.1*p_rem))-(2*n);
+            if(n<0) n = 0;
+            return n;
+        }
+        public double qtdK(){
+            double n;
+            if(this.mat_org <= 10)n = this.mat_org;
+            else n = 10;
+            n = (236.47+(2.381*this.z)-(1.21*this.k_meh))-(3*n);
+            if(n<0) n = 0;
+            return n;
         }
     }

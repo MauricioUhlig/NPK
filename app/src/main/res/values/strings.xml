@@ -206,11 +206,13 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="analise_solo"><b>Análise do solo: </b></string>
     <string name="p_mehlich">P (Mehlich-1)</string>
     <string name="k_mehlich">K (Mehlich-1)</string>
+    <string name="p_rem">P-rem</string>
     <string name="materia_org">Matéria Org.</string>
     <string name="sat_bases">Sat. Bases (V)</string>
     <string name="ctc_solo">CTC do solo (T)</string>
     <string name="prnt_calcario">PRNT do calcário</string>
     <string name="mg_dm3">mg/dm³</string>
+    <string name="mg_l">mg/L</string>
     <string name="percent">%</string>
     <string name="tha">t/ha</string>
     <string name="cmolc_dm3">cmolc/dm³</string>
@@ -405,5 +407,11 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="cafe_setembro">1) Setembro: </string>
     <string name="cafe_novembro">2) Novembro: </string>
     <string name="cafe_janeiro">3) Janeiro: </string>
+    <string name="cafe_recepado">Recepado</string>
+    <string name="cafe_desbota">Na desbota: </string>
+    <string name="cafe_30dias">Após 30 dias: </string>
+    <string name="cafe_70dias">Após 70 dias: </string>
+    <string name="cafe_120dias">Após 120 dias: </string>
+
 </resources>
 
