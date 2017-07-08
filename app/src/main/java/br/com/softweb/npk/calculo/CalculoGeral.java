@@ -61,6 +61,19 @@ public class CalculoGeral {
         }
         return 0;
     }
+    //=SE(D9<10;200;SE(E(D9>=10;D9<20);150;SE(E(D9>=20;D9<40);100;SE(E(D9>=40;D9<60);50;0))))
+    public float SSgCafeAraica(){
+        float ssg;
+        if(p<10)ssg=200;
+        else if (p>=10 && p<20)ssg=150;
+        else if (p>=20 && p<40)ssg=100;
+        else if (p>40 && p<60)ssg=50;
+        else ssg=0;
+        if(ssg>0) {
+            return ssg;
+        }
+        return 0;
+    }
 
     public float SSgAbacaxi(){
         float ssg;

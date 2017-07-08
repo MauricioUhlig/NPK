@@ -412,6 +412,9 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="cafe_30dias">Após 30 dias: </string>
     <string name="cafe_70dias">Após 70 dias: </string>
     <string name="cafe_120dias">Após 120 dias: </string>
-
+    <string name="cafeArabica_obs1"> Parcelar a quantidade de calcário em doses de, no máximo, <b>3 t/ha</b> por aplicação, espaçadas de, no mínimo, 10 meses.</string>
+    <string name="cafeArabica_obs2"> No caso do resultado da análise não conter o <b>P-rem</b>, digitar o valor 20.</string>
+    <string name="cafeArabica_obs3"> Aplicar as doses de N e K durante o período chuvoso (floração, chumbinho e granação).</string>
+    <string name="cafeArabica_obs4"> No segundo ano após a recepa, seguir recomendação de adubação de produção</string>
 </resources>
 

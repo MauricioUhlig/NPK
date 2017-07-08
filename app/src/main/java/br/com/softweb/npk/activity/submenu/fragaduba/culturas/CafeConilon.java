@@ -21,11 +21,12 @@
     import br.com.softweb.npk.activity.submenu.repetentes.FragmentProducaoCafe;
     import br.com.softweb.npk.activity.submenu.repetentes.Fragment_PlantioCafe;
     import br.com.softweb.npk.activity.submenu.repetentes.ObservacoesCafeArabica;
+    import br.com.softweb.npk.activity.submenu.repetentes.ObservacoesCafeConilon;
     import br.com.softweb.npk.activity.submenu.repetentes.Substrato;
     import br.com.softweb.npk.calculo.CalculoGeral;
 
 
-    public class CafeArabica extends AppCompatActivity {
+    public class CafeConilon extends AppCompatActivity {
         private float x, y, z, p_meh, k_meh, mat_org, sat_bases, ctc, prnt;
         private Toolbar toolbar;
         private TabLayout tabLayout;
@@ -53,8 +54,7 @@
             adapter.addFrag(new Substrato(), getText(R.string.substrato).toString());
             adapter.addFrag(new Fragment_PlantioCafe(), getText(R.string.plantio_formacao).toString());
             adapter.addFrag(new FragmentProducaoCafe(),getText(R.string.producao).toString());
-            adapter.addFrag(new FragmentCafeArabicaRecepado(),getText(R.string.cafe_recepado).toString());
-            adapter.addFrag(new ObservacoesCafeArabica(),getText(R.string.tit_obs).toString());
+            adapter.addFrag(new ObservacoesCafeConilon(),getText(R.string.tit_obs).toString());
             viewPager.setAdapter(adapter);
         }
 
@@ -235,13 +235,13 @@
             aduboCV3.setText("20-"+(int)(qtdP(p_rem)*100/((qtdN()*100)/20))+"-"+adubo1);
 
         }
-        public float qtdN(){
-            float n;
+        public double qtdN(){
+            double n;
             n = this.mat_org;
             if(n > 10)n = 10;
-            n = (float)((226.417+(2.465*this.z))-(10*n));
+            n = ((226.417+(2.465*this.z))-(10.975*n));
             if(n<0) n = 0;
-            return n;
+            return n*0.9;
         }
         public double qtdP(float p_rem){
             double n;
@@ -249,7 +249,7 @@
             if(n > 10)n = 10;
             n = (189+(0.537*this.z)-(8.26*this.p_meh)-(2.1*p_rem))-(2*n);
             if(n<0) n = 0;
-            return n;
+            return n*0.8;
         }
         public double qtdK(){
             double n;
@@ -257,58 +257,6 @@
             else n = 10;
             n = (236.47+(2.381*this.z)-(1.21*this.k_meh))-(3*n);
             if(n<0) n = 0;
-            return n;
-        }
-        public void calcularRecepado(View v){
-            this.X = (TextView) findViewById(R.id.espa1);
-            this.Y = (TextView) findViewById(R.id.espa2);
-            TextView densidade = (TextView) findViewById(R.id.densidade_plantas);
-            this.P_meh = (TextView) findViewById(R.id.p_meh);
-            this.K_meh = (TextView) findViewById(R.id.k_meh);
-            this.Sat_bases = (TextView) findViewById(R.id.sat_bases);
-            this.Ctc = (TextView) findViewById(R.id.ctc);
-            this.Prnt = (TextView) findViewById(R.id.prnt);
-
-            if (this.X.getText().toString().isEmpty()|| this.Y.getText().toString().isEmpty()||
-                    this.P_meh.getText().toString().isEmpty()|| this.K_meh.getText().toString().isEmpty()
-                    ||this.Sat_bases.getText().toString().isEmpty()|| this.Ctc.getText().toString().isEmpty()|| this.Prnt.getText().toString().isEmpty()){
-                Toast.makeText(this,getText( R.string.vazio),Toast.LENGTH_SHORT).show();
-                return ;
-            }
-            this.x = Float.parseFloat(X.getText().toString());
-            this.y = Float.parseFloat(Y.getText().toString());
-            this.p_meh = Float.parseFloat(P_meh.getText().toString());
-            this.k_meh = Float.parseFloat(K_meh.getText().toString());
-            this.sat_bases = Float.parseFloat(Sat_bases.getText().toString());
-            this.ctc = Float.parseFloat(Ctc.getText().toString());
-            this.prnt = Float.parseFloat(Prnt.getText().toString());
-            int dens = (int) (10000/(x*y));
-            densidade.setText("= "+dens+" ");
-
-            TextView superfosfato = (TextView) findViewById(R.id.superfosfato);
-            TextView fte = (TextView) findViewById(R.id.fte);
-            TextView calagem = (TextView) findViewById(R.id.calagem);
-            TextView trintadias = (TextView) findViewById(R.id.trintadias);
-            TextView setenta = (TextView) findViewById(R.id.setenta);
-            TextView centoevinte = (TextView) findViewById(R.id.centoevinte);
-            TextView adubo = (TextView) findViewById(R.id.adubo);
-            TextView adubo1 = (TextView) findViewById(R.id.adubo1);
-            TextView adubo2 = (TextView) findViewById(R.id.adubo2);
-
-            CalculoGeral calcula = new CalculoGeral();
-            calcula.setAll(this.x, this.y, 0, this.p_meh, this.k_meh, 0, this.sat_bases, this.ctc, this.prnt, 60);
-
-            calagem.setText(""+calcula.calagem());
-            superfosfato.setText(""+calcula.SSgCafeAraica());
-            fte.setText("30");
-
-            trintadias.setText("30");
-            setenta.setText("50");
-            centoevinte.setText("80");
-
-            String stradubo = calcula.adubo4parametros(60,120,200,280);
-            adubo.setText(stradubo);
-            adubo1.setText(stradubo);
-            adubo2.setText(stradubo);
+            return n*0.9;
         }
     }
