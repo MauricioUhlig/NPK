@@ -164,4 +164,12 @@ public class RecoAduba extends AppCompatActivity {
         Intent it = new Intent(this, CafeConilon.class);
         startActivity(it);
     }
+    public void recCana(View v){
+        Intent it = new Intent(this, Cana.class);
+        startActivity(it);
+    }
+    public void recCaqui(View v){
+        Intent it = new Intent(this, Caqui.class);
+        startActivity(it);
+    }
 }

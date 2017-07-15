@@ -241,6 +241,20 @@ public class CalculoGeral {
         else if(p>=20 && p<50)return 40;
         else return 0;
     }
+    public float fosforoCaqui(int x){
+        if(x == 1 ) {
+            if (p < 10) return 150;
+            else if (p >= 10 && p < 20) return 100;
+            else if (p >= 20 && p < 50) return 80;
+            else return 0;
+        } else {
+            if (p < 10) return 200;
+            else if (p >= 10 && p < 20) return 150;
+            else if (p >= 20 && p < 50) return 100;
+            else return 0;
+        }
+    }
+
     public String adubo4parametros(int a, int b, int c, int d){
         if(k<a)return "20-00-30";
         else if(k>=a && k<b) return "20-00-20";

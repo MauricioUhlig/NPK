@@ -244,6 +244,24 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="br.com.softweb.npk.activity.submenu.RecoAduba" />
         </activity>
+        <activity
+            android:name=".activity.submenu.fragaduba.culturas.Cana"
+            android:label="@string/Cana"
+            android:parentActivityName=".activity.submenu.RecoAduba"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.softweb.npk.activity.submenu.RecoAduba" />
+        </activity>
+        <activity
+            android:name=".activity.submenu.fragaduba.culturas.Caqui"
+            android:label="@string/Caqui"
+            android:parentActivityName=".activity.submenu.RecoAduba"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.softweb.npk.activity.submenu.RecoAduba" />
+        </activity>
     </application>
 
 </manifest>

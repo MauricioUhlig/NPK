@@ -416,5 +416,19 @@ Phasellus vel tristique tellus. Curabitur quis sagittis turpis, non scelerisque 
     <string name="cafeArabica_obs2"> No caso do resultado da análise não conter o <b>P-rem</b>, digitar o valor 20.</string>
     <string name="cafeArabica_obs3"> Aplicar as doses de N e K durante o período chuvoso (floração, chumbinho e granação).</string>
     <string name="cafeArabica_obs4"> No segundo ano após a recepa, seguir recomendação de adubação de produção</string>
+
+    <!--Cana-->
+    <string name="tit_cana"><b>Adubação para a cultura da Cana</b></string>
+    <string name="cana_obs1"> Para cana soca aplicar 80 kg de N e metade da dose de P2O5 e de K2O</string>
+    <string name="cana_obs2"> A adubação de cobertura deve ser feita 30 a 60 dias após plantio</string>
+    <string name="cana_obs3"> Em solos com baixos teores de micronutrientes, aplicar 80 kg/ha de FTE no plantio</string>
+    <string name="cana_obs4"> Produtividade esperada = Cana planta: 120.000 kg/ha. Cana soca: 80.000 kg/ha.</string>
+    <string name="cobertura">Cobertura: </string>
+    <string name="qtd_fertilizantes"><b>Quantidade de Fertilizantes: </b></string>
+    <string name="m_linear">metros lineares/ha</string>
+    
+    <!--Caqui-->
+    <string name="oitenta_dias">2) 80 dias do plantio: </string>
+    <string name="centoetrinta_dias">3) 130 dias do plantio: </string>
 </resources>
 
